@@ -1,0 +1,42 @@
+body {
+    
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #222;
+    color:#555;
+    
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.65em;
+    padding: 4em 1em;
+    background-color: #ddd;
+
+}
+h1,h2 {
+    color:#333;
+}
+
+
+
+.anon_pepe, .happy_music_pepe {
+    width:100px;
+    height: auto;
+    
+}
+
+a {
+    color:#2279de;
+    text-decoration-line: none;
+    padding:.75em;
+}
+
+a:hover {
+    color:#054288;
+    background-color:#7fa9da;
+}
+
+li {
+    margin: 1.05em;
+}
