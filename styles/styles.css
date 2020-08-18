@@ -8,7 +8,8 @@ body {
 
 .content {
     margin: 0 auto;
-    max-width: 50em;
+    /* max-width: 50em; */
+    max-width: 65em;
     line-height: 1.65em;
     padding: 4em 1em;
     background-color: #ddd;
