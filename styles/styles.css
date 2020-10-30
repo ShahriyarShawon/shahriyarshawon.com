@@ -1,8 +1,7 @@
 body {
     
-    font-family: 'Roboto', Helvetica, sans-serif;
-    background-color: #222;
-    color:#555;
+    font-family: 'Ubuntu Mono', Helvetica, sans-serif;
+    background-color: #272a34;
     
 }
 
@@ -12,14 +11,9 @@ body {
     max-width: 65em;
     line-height: 1.65em;
     padding: 4em 1em;
-    background-color: #ddd;
+    color: white;
 
 }
-h1,h2 {
-    color:#333;
-}
-
-
 
 .anon_pepe, .happy_music_pepe {
     width:100px;
@@ -28,7 +22,7 @@ h1,h2 {
 }
 
 a {
-    color:#2279de;
+    color:#05a1f7;
     text-decoration-line: none;
     padding:.75em;
 }
@@ -40,4 +34,14 @@ a:hover {
 
 li {
     margin: 1.05em;
+}
+
+strong ,h1, h2,h3{
+    color:#277FFF;
+    /* color:#FFA44F */
+}
+
+h4 {
+    color: #05a1f7;
+    /* color:#FF9872; */
 }
