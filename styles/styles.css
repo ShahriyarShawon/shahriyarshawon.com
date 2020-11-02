@@ -47,3 +47,11 @@ h4 {
     color: #05a1f7;
     /* color:#FF9872; */
 }
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #BBB;
+  padding: 2px;
+  font-size: 105%;
+}
