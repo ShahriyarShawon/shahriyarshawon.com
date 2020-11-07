@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-
-body {
-    
-    font-family: 'Ubuntu Mono', Helvetica, sans-serif;
-    background-color: #272a34;
-    
+body {   
+    font-family: Helvetica, sans-serif;
+    background-color: #272a34;    
 }
 
 .content {
     margin: 0 auto;
-    /* max-width: 50em; */
-    max-width: 65em;
+    max-width: 55em;
     line-height: 1.65em;
-    padding: 4em 1em;
+    padding: 2em 1em;
     color: white;
 
 }
@@ -40,12 +35,10 @@ li {
 
 strong ,h1, h2,h3{
     color:#277FFF;
-    /* color:#FFA44F */
 }
 
 h4 {
     color: #05a1f7;
-    /* color:#FF9872; */
 }
 
 code {

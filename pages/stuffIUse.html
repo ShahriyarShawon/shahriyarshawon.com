@@ -18,7 +18,7 @@
             <a href="../index.html">Homepage</a>
             <a href="guides/guides.html">Guides</a>
             <a href="musicILike.html">Music I Like</a>
-        
+
             <img src="../images/favicon.png" style="width:100px; height: auto; float:right;" alt="">
         </nav>
         <h1>Stuff I use:</h1>
@@ -29,46 +29,50 @@
                     the arch user installation guide should tell you about that.
                 </p>
                 <code>
-                    yay -S mate mate-extra xrandr arandr thunar alacritty terminator nnn feh flameshot dunst copyq ttf-jetbrains-mono vscodium-bin rofi rofi-emoji peek mpv obs-studio spotify
+                    yay -S mate mate-extra xorg-xrandr arandr thunar alacritty terminator nnn feh flameshot dunst copyq ttf-jetbrains-mono vscodium-bin rofi rofi-emoji peek mpv obs-studio spotify
                 </code>
-            </li>   
-            
+            </li>
+
             <li>
                 <h2>Software/Configurations for Arch</h2>
-                <p><strong style="color:#BF2E5D;">WARNING:</strong> 
+                <p><strong style="color:#BF2E5D;">WARNING:</strong>
                     My configurations take into account the fact that you are also using the other apps I use.
                     All the important apps are listed below. Don't just copy paste my configs.
-                    Look at them and edit them to your liking before actually using them as your own. 
+                    Look at them and edit them to your liking before actually using them as your own.
                     I am not responsible for any breakage of your system.
                 </p>
                 <ul>
                     <li><strong>My dotfiles -></strong>
-                    <a href="https://github.com/ShahriyarShawon/shays_dotfiles" target="_blank">GitHub</a>
-                    
+                        <a href="https://github.com/ShahriyarShawon/shays_dotfiles" target="_blank">GitHub</a>
+
                     </li>
                     <li><strong>AUR Helper/Wrapper -> </strong>yay
                         <a href="https://aur.archlinux.org/packages/yay/" target="_blank">AUR</a>
                     </li>
                     <li><strong>Network -></strong> networkmanager</li>
                     <li><strong>Ethernet Daemon -></strong>
-                    ifplugd</li>
+                        ifplugd</li>
                     <li><strong>Desktop Environment -> </strong>MATE</li>
-                    <li><strong>Display Manager -> </strong>xrandr with arandr
-                        <p>arandr is the gui for xrandr</p>
+                    <li><strong>Display Manager -> </strong>xorg-xrandr with arandr
+                        <p>arandr is the gui for xorg-xrandr</p>
                         <p>Only really useful if you have more than one monitor</p>
                     </li>
                     <li><strong>GUI File Explorer -> </strong>thunar</li>
                     <li><strong>Shell -> </strong> bash</li>
                     <li><strong>Terminal Emulator -></strong> alacritty & terminator
                         <p>Alacritty doesn't play well with ssh so I use <strong>terminator</strong>
-                        for ssh-ing
-                    </p>
+                            for ssh-ing
+                        </p>
                     </li>
                     <li><strong>Terminal File Explorer -> </strong>nnn
                     </li>
                     <li><strong>Terminal Image Viewer -> </strong> feh
-                     </li>
-                    <li><strong>Screenshot -></strong> flameshot with dunst (dunst is the notification daemon that makes sure flameshot doesnt freeze up)
+                    </li>
+                    <li><strong>Bulk Renamer -> </strong> vimv <a
+                            href="https://aur.archlinux.org/packages/vimv-git/">AUR</a>
+                    </li>
+                    <li><strong>Screenshot -></strong> flameshot with dunst (dunst is the notification daemon that makes
+                        sure flameshot doesnt freeze up)
                     </li>
 
                     <li><strong>Clipboard Manager -> </strong>copyq
@@ -78,7 +82,9 @@
                         <pre>sudo pacman -S ttf-jetbrains-mono</pre>
 
                     </li>
-                    <li><strong>Editor -></strong> code (VSCode)</li>
+                    <li><strong>Editor -></strong> code (VSCode/VSCodium)
+                        <a href="https://aur.archlinux.org/packages/vscodium-bin/">AUR</a>
+                    </li>
                     <ul>
                         <li><strong>Theme -></strong> One Dark Pro Theme</li>
                         <li>Sublime keybinds</li>
@@ -102,10 +108,10 @@
                     <li><strong>Video Player -> </strong> mpv</li>
                     </p>
                     <li><strong>Music -></strong> Spotify
-                            <p>Go over to <a href="musicILike.html">my music if you like metal and rock</a></p>
+                        <p>Go over to <a href="musicILike.html">my music if you like metal and rock</a></p>
                     </li>
 
-                   
+
 
                     <img src="../images/happy_music_pepe.gif" class="happy_music_pepe" alt="">
                 </ul>
@@ -118,16 +124,19 @@
                         <ul>
                             <li>
                                 <h4>Thinkpad T430. 12GB RAM, 256GB SSD, i5 3230M, Windows10/Arch</h4>
-                                <p>Main machine right now connected to a ~10 year old monitor and cheap knock-off "gAminG PeRipHEralS".
-                                    Upgradeable, nice keyboard. 
+                                <p>Main machine right now connected to a ~10 year old monitor and cheap knock-off
+                                    "gAminG PeRipHEralS".
+                                    Upgradeable, nice keyboard.
                                 </p>
                                 <p>Mainly use Arch, hardly ever boot into Windows10.
-                                Systemd only ever made me lose sleep once so not sure if I'm gonna switch to Artix.</p>
+                                    Systemd only ever made me lose sleep once so not sure if I'm gonna switch to Artix.
+                                </p>
                             </li>
                             <li>
                                 <h4>MacBook Pro 13" Late 2017. 8GB RAM, 256GB SSD, i5 something, MacOS Catalina</h4>
-                                <p>It's not trash, it's lightweight, keyboard's are subjective, and doesnt have a crappy mic/camera.
-                                    Much better than windows for almost anything related to coding. 
+                                <p>It's not trash, it's lightweight, keyboard's are subjective, and doesnt have a crappy
+                                    mic/camera.
+                                    Much better than windows for almost anything related to coding.
                                     Has a unix-like shell unlike powershell/cmd </p>
                             </li>
                             <li>
@@ -139,8 +148,8 @@
                     <li>
                         <h3>Printer</h3>
                         <h4>Brother MFC-L2710DW</h4>
-                        
-                        
+
+
 
                     </li>
 
