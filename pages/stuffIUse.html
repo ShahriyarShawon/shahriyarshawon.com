@@ -1,143 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
-    <title>Stuff I Use</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+        <title>Stuff I Use</title>
+    </head>
 
-<body>
-    <div class="content">
-        <nav>
-            <a href="https://github.com/ShahriyarShawon" target="_blank">GitHub</a>
-            <a href="currentResume.pdf" target="_blank">Resume</a>
-            <a href="../index.html">Homepage</a>
-            <a href="musicILike.html">Music I Like</a>
-        
-            <img src="../images/favicon.png" style="width:100px; height: auto; float:right;" alt="">
-        </nav>
-        <h1>Stuff I use:</h1>
-        <ul>
-            <li>
-                <p>Here's the command you can use to get most of these utilities.</p>
-                <p>You should probably have vim, some type of network manager and some other stuff but
-                    the arch user installation guide should tell you about that.
-                </p>
-                <code>
-                    yay -S mate mate-extra xrandr arandr thunar alacritty terminator nnn feh flameshot dunst copyq ttf-jetbrains-mono vscodium-bin rofi rofi-emoji peek mpv obs-studio spotify
-                </code>
-            </li>   
-            
-            <li>
-                <h2>Software/Configurations for Arch</h2>
-                <p><strong style="color:red;">WARNING:</strong> 
-                    My configurations take into account the fact that you are also using the other apps I use.
-                    All the important apps are listed below. Don't just copy paste my configs.
-                    Look at them and edit them to your liking before actually using them as your own. 
-                    I am not responsible for any breakage of your system.
-                </p>
-                <ul>
-                    <li><strong>My dotfiles -></strong>
-                    <a href="https://github.com/ShahriyarShawon/shays_dotfiles" target="_blank">GitHub</a>
-                    
-                    </li>
-                    <li><strong>AUR Helper/Wrapper -> </strong>yay
-                        <a href="https://aur.archlinux.org/packages/yay/" target="_blank">AUR</a>
-                    </li>
-                    <li><strong>Desktop Environment -> </strong>MATE</li>
-                    <li><strong>Display Manager -> </strong>xrandr with arandr
-                        <p>arandr is the gui for xrandr</p>
-                        <p>Only really useful if you have more than one monitor</p>
-                    </li>
-                    <li><strong>GUI File Explorer -> </strong>thunar</li>
-                    <li><strong>Shell -> </strong> bash</li>
-                    <li><strong>Terminal Emulator -></strong> alacritty & terminator
-                        <p>Alacritty doesn't play well with ssh so I use <strong>terminator</strong>
-                        for ssh-ing
+    <body>
+        <div class="content">
+            <nav>
+                <a href="https://github.com/ShahriyarShawon" target="_blank">GitHub</a>
+                <a href="currentResume.pdf" target="_blank">Resume</a>
+                <a href="../index.html">Homepage</a>
+                <a href="guides/guides.html">Guides</a>
+                <a href="musicILike.html">Music I Like</a>
+
+                <img src="../images/favicon.png" style="width:100px; height: auto; float:right;" alt="">
+            </nav>
+            <h1>Everyday stuff I use:</h1>
+            <ul>
+                <li>
+                    <h2>Software/Configurations for Arch</h2>
+                    <p>
+                        <strong style="color:#BF2E5D;">WARNING:</strong>
+                        My configurations take into account the fact that you are also using the other apps I use.
+                        All the important apps are listed below. Don't just copy paste my configs.
+                        Look at them and edit them to your liking before actually using them as your own.
+                        I am not responsible for any breakage of your system.
                     </p>
-                    </li>
-                    <li><strong>Terminal File Explorer -> </strong>nnn
-                    </li>
-                    <li><strong>Terminal Image Viewer -> </strong> feh
-                     </li>
-                    <li><strong>Screenshot -></strong> flameshot with dunst (dunst is the notification daemon that makes sure flameshot doesnt freeze up)
-                    </li>
-
-                    <li><strong>Clipboard Manager -> </strong>copyq
-                    </li>
-                    <li><strong>Monospace Font -></strong> Jetbrains Mono
-                        <a href="https://www.jetbrains.com/lp/mono/" target="_blank">Jetbrains Site</a>
-                        <pre>sudo pacman -S ttf-jetbrains-mono</pre>
-
-                    </li>
-                    <li><strong>Editor -></strong> code (VSCode)</li>
                     <ul>
-                        <li><strong>Theme -></strong> One Dark Pro Theme</li>
-                        <li>Sublime keybinds</li>
-                    </ul>
-                    <li><strong>Hotkeys/Keybinds -></strong> sxhkd
-                        <a href="https://github.com/baskerville/sxhkd" target="_blank">GitHub</a>
-                        <a href="https://wiki.archlinux.org/index.php/Sxhkd" target="_blank">ArchWiki</a>
-                        <p>Uses <a href="https://www.tcl.tk/man/tcl8.4/TkCmd/keysyms.htm" target="_blank">KeySym</a> to
-                            represent keys</p>
-                    </li>
-                    <li><strong>App Launcher -></strong> rofi
-                        <a href="https://github.com/davatorium/rofi" target="_blank">GitHub</a>
-                        <a href="https://wiki.archlinux.org/index.php/Rofi" target="_blank">ArchWiki</a>
-                    </li>
-                    <li><strong>Emoji -></strong> rofi-emoji
-                        <a href="https://github.com/Mange/rofi-emoji" target="_blank">GitHub</a>
-                        <a href="https://aur.archlinux.org/packages/rofi-emoji/" target="_blank">AUR</a>
-                    </li>
-                    <li><strong>Gif Recorder -> </strong>peek</li>
-                    <li><strong>Video Recorder -> </strong>obs-studio</li>
-                    <li><strong>Video Player -> </strong> mpv</li>
-                    </p>
-                    <li><strong>Music -></strong> Spotify
-                            <p>Go over to <a href="musicILike.html">my music if you like metal and rock</a></p>
-                    </li>
+                        <li>
+                            <strong>Dotfiles -></strong>
+                            <a href="https://github.com/ShahriyarShawon/shays_dotfiles" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <strong>App Launcher -></strong>
+                            rofi
+                            <a href="https://github.com/davatorium/rofi" target="_blank">GitHub</a>
+                            <a href="https://wiki.archlinux.org/index.php/Rofi" target="_blank">ArchWiki</a>
+                        </li>
+                        <li>
+                            <strong>Archiving/Compression</strong>
+                            -> p7zip, zip, unzip, unrar, rar
+                            <a href="https://aur.archlinux.org/packages/rar/" targget="_blank">(AUR)</a>
+                        </li>
+                        <li>
+                            <strong>Archive Manager</strong>
+                            -> file-roller
+                        </li>
+                        <li>
+                            <strong>AUR Helper/Wrapper ->
+                            </strong>yay
+                            <a href="https://aur.archlinux.org/packages/yay/" target="_blank">AUR</a>
+                        </li>
+                        <li>
+                            <strong>Bluetooth -></strong>
+                            blueberry bluez bluez-utils
+                        </li>
+                        <li>
+                            <strong>Network -></strong>
+                            networkmanager</li>
+                        <li>
+                            <strong>Ethernet Daemon -></strong>
+                            ifplugd</li>
+                        <li>
+                            <strong>Desktop Environment ->
+                            </strong>xfce4
+                        </li>
+                        <li>
+                            <strong>File Explorer -></strong>
+                            Thunar 
+                            <p>(install ntfs-3g to function with ntfs drives properly)</p>
+                        </li>
+                        <li>
+                            <strong>Display Manager ->
+                            </strong>xorg-xrandr with arandr
+                            <p>arandr is the gui for xorg-xrandr. xfce4 handles most of my monitor configs though.</p>
+                            <p>Only really useful if you have more than one monitor</p>
+                        </li>
 
-                   
-
-                    <img src="../images/happy_music_pepe.gif" class="happy_music_pepe" alt="">
-                </ul>
-            </li>
-            <li>
-                <h2>Computing</h2>
-                <ul>
-                    <li>
-                        <h3>Computers</h3>
+                        <li>
+                            <strong>Shell ->
+                            </strong>
+                            bash</li>
+                        <li>
+                            <strong>Terminal Emulator -></strong>
+                            alacritty & terminator
+                            <p>Alacritty doesn't play well with ssh so I use
+                                <strong>terminator</strong>
+                                for ssh-ing
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Terminal Image Viewer ->
+                            </strong>
+                            feh
+                        </li>
+                        <li>
+                            <strong>Screenshot -></strong>
+                            flameshot 
+                        </li>
+                        <li>
+                            <strong>Notification Daemon -></strong>
+                            dunst
+        
+                        </li>
+                        <li>
+                            <strong>Scanning -></strong>
+                            simple-scan</li>
+        
+                        <li>
+                            <strong>Clipboard Manager ->
+                            </strong>copyq
+                        </li>
+                        <li>
+                            <strong>Monospace Font -></strong>
+                            Jetbrains Mono
+                            <a href="https://www.jetbrains.com/lp/mono/" target="_blank">Jetbrains Site</a>
+        
+                        </li>
+                        <li>
+                            <strong>Editor -></strong>
+                            code (VSCode/VSCodium)
+                            <a href="https://aur.archlinux.org/packages/vscodium-bin/">AUR</a>
+                        </li>
                         <ul>
                             <li>
-                                <h4>Thinkpad T430. 12GB RAM, 256GB SSD, i5 3230M, Windows10/Arch</h4>
-                                <p>Main machine right now connected to a ~10 year old monitor and cheap knock-off "gAminG PeRipHEralS".
-                                    Upgradeable, nice keyboard. 
-                                </p>
-                                <p>Mainly use Arch, hardly ever boot into Windows10.
-                                Systemd only ever made me lose sleep once so not sure if I'm gonna switch to Artix.</p>
-                            </li>
-                            <li>
-                                <h4>MacBook Pro 13" Late 2017. 8GB RAM, 256GB SSD, i5 something, MacOS Catalina</h4>
-                                <p>It's not trash, it's lightweight, keyboard's are subjective, and doesnt have a crappy mic/camera.
-                                    Much better than windows for almost anything related to coding. 
-                                    Has a unix-like shell unlike powershell/cmd </p>
-                            </li>
-                            <li>
-                                <h4>A Raspberry Pi 3B+</h4>
-                                <p>Emby and Samba server </p>
-                            </li>
+                                <strong>Theme -></strong>
+                                One Dark Pro Theme</li>
+                            <li>Sublime keybinds</li>
                         </ul>
+                        <li>
+                            <strong>Hotkeys -></strong>
+                            sxhkd
+                            <a href="https://github.com/baskerville/sxhkd" target="_blank">GitHub</a>
+                            <a href="https://wiki.archlinux.org/index.php/Sxhkd" target="_blank">ArchWiki</a>
+                            <p>Uses
+                                <a href="https://www.tcl.tk/man/tcl8.4/TkCmd/keysyms.htm" target="_blank">KeySym</a>
+                                to represent keys</p>
+                        </li>
+        
+                        <li>
+                            <strong>Emoji -></strong>
+                            rofi-emoji
+                            <a href="https://github.com/Mange/rofi-emoji" target="_blank">GitHub</a>
+                            <a href="https://aur.archlinux.org/packages/rofi-emoji/" target="_blank">AUR</a>
+                        </li>
+                        <li>
+                            <strong>Gif Recorder -></strong>
+                            peek
+                        </li>
+                        <li>
+                            <strong>Video Editor -></strong>
+                            shotcut losslesscut
+                        </li>
+                        <li>
+                            <strong>Video Recorder ->
+                            </strong>obs-studio</li>
+                        <li>
+                            <strong>Video Player -></strong>
+                            mpv vlc
+                        </li>
+                    </p>
+                    <li>
+                        <strong>Music -></strong>
+                        Spotify
+                        <p>Go over to
+                            <a href="musicILike.html">my music if you like metal and rock</a>
+                        </p>
                     </li>
+        
+        
+                    <img src="../images/happy_music_pepe.gif" class="happy_music_pepe" alt="">
+                    </ul>
+                </li>
+                
 
-                </ul>
-            </li>
-        </ul>
-    </div>
 
-</body>
+            </ul>
+            <h2>Devices I have/use</h2>
+            <ul>
+                <li>
+                    <h3>Computers</h3>
+                    <ul>
+                        <li>
+                            <h4>Thinkpad T430. 12GB RAM, 256GB SSD, i5 3230M, Windows10/Arch</h4>
+                            <p>Main machine right now connected to a ~10 year old monitor, 
+                                ~10 year old dell keyboard and a off brand Chinese "gAmInG" mouse. 
+                                Upgradeable, nice keyboard.
+                            </p>
+                            <p>Mainly use Arch, hardly ever boot into Windows10.</p>
+                        </li>
+                        <li>
+                            <h4>MacBook Pro 13" Late 2017. 8GB RAM, 256GB SSD, i5 something, MacOS Catalina</h4>
+                            <p>It's not trash, it's lightweight, keyboard's are subjective, and doesnt have a crappy
+                                                                                                                    mic/camera.
+                                                                                                                    Much better than windows for almost anything related to coding.
+                                                                                                                    Has a unix-like shell unlike powershell/cmd
+                            </p>
+                        </li>
+                        <li>
+                            <h4>A Raspberry Pi 3B+</h4>
+                            <p>Emby and Samba server
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Printer</h3>
+                    <h4>Brother MFC-L2710DW</h4>
+                </li>
+                <li>
+                    <h3>Misc</h3>
+                    <ul>
+                        <li>
+                            <h4>Shanwan PS3/XBOX/Android/PC USB Controller</h4>
+                            <p>just a cheapo controller I bought for emulation</p>
+                        </li>
+                        <li>
+                            <h4>Huion H420 Pen and Tablet</h4>
+                            <p>Info on how to set up soon</p>
+                        </li>
+                    </ul>
+                    
+                </li>
 
+            </ul>
+        </div>
+    </body>
 </html>
