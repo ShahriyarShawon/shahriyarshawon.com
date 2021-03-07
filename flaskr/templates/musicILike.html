@@ -1,0 +1,26 @@
+{% extends 'template.html' %}
+
+{% block head %}{% endblock head %}
+{% block title %}Music I Like{% endblock title %}
+
+{% block navitem %}
+<div class="nav-item">
+    <a href="/index.html">Home</a>
+</div>
+<div class="nav-item">
+    <a href="/stuffIUse.html">Stuff I Use</a>    
+</div>
+{% endblock navitem %}
+
+{% block content %}
+
+<h1>Music I Like</h1>
+<p>Takes a second to load cause its talking to spotify</p>
+<iframe src="https://open.spotify.com/embed/playlist/4GclYYGihrEmOcqufr7kxm" width="300" height="380"
+frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed/playlist/5VCmHrwjzb3GiUI22GP8Fn" width="300" height="380"
+frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed/playlist/1a0U9ylR1qUZsnl9HbHd1C" width="300" height="380"
+frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+{% endblock content %}

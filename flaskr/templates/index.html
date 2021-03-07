@@ -1,0 +1,40 @@
+{% extends 'template.html' %}
+
+{% block head %}{% endblock head %}
+{% block title %}Shay's Corner{% endblock title %}
+
+
+{% block navitem %}
+<div class="nav-item">
+    <a href="/stuffIUse.html">Stuff I Use</a>
+</div>
+<div class="nav-item">
+    <a href="/musicILike.html">Music I Like</a>    
+</div>
+{% endblock navitem %}
+
+
+
+{% block content %}
+<div class="centered">
+    <p class="welcome-text"><u>Welcome to</u></p>
+    <h1 class="index-title">Shahriyar Shawon's Website</h1>
+    <img src="{{ url_for('static', filename='anon_pepe.gif') }}" class="anon_pepe" alt="">
+
+</div>
+<hr>
+
+<h1>Stuff I do:</h1>
+<ul>
+    <li>IDK. Computer stuff I guess.</li>
+    
+</ul>
+<p>I'm learning how to do responsive design so this site probably doesn't look too great.</p>
+<p>This site is here for me to share how I use my systems with other people</p>
+
+<p>If you wanna see what I use or how I use it, head over to <a href="/stuffIUse.html">stuff I use</a></p>
+<p>Go over to <a href="/musicILike.html">my music if you like metal and rock</a></p>
+{% endblock content %}
+
+
+
