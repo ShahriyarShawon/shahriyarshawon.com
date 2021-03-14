@@ -7,7 +7,8 @@ env = Environment(
 root_dir_files = [
     "index.html",
     "musicILike.html",
-    "stuffIUse.html"
+    "stuffIUse.html",
+    "portfolio.html"
 ]
 
 for i in root_dir_files:
