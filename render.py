@@ -19,7 +19,6 @@ for i in root_dir_files:
 
 guides = [
     "index.html",
-    "arch_installation.html"
 ]
 
 for i in guides:
