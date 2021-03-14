@@ -19,6 +19,7 @@ for i in root_dir_files:
 
 guides = [
     "index.html",
+    "college_tools.html"
 ]
 
 for i in guides:
