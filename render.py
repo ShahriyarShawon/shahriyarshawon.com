@@ -8,7 +8,8 @@ root_dir_files = [
     "index.html",
     "musicILike.html",
     "stuffIUse.html",
-    "portfolio.html"
+    "portfolio.html",
+    "donate.html"
 ]
 
 for i in root_dir_files:
