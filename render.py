@@ -9,7 +9,11 @@ root_dir_files = [
     "musicILike.html",
     "stuffIUse.html",
     "portfolio.html",
+<<<<<<< HEAD
+    "donate.html"
+=======
     "coolLinks.html"
+>>>>>>> 376d946b8224159624c688b1d2e31a7cb21bc570
 ]
 
 for i in root_dir_files:
