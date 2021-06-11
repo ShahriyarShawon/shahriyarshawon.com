@@ -1,0 +1,99 @@
+/* TEMPLATE */
+body {   
+    font-family: Inter, Helvetica, sans-serif;
+    background-color: #272a34;    
+}
+
+#mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#mobile-overlay-nav {
+    /* The Overlay (background) */
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 0%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #272a34; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  
+}
+#mobile-overlay-nav > div {
+    text-align: center;
+    margin: 20px;
+    margin-top:10px;
+}
+#mobile-overlay-nav > div > a {
+    
+    font-size: 2em;
+}
+#hamburger-menu {
+    fill:#277FFF;
+}
+
+.nav-img {
+    height: 40px;
+    width: auto;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 55em;
+    line-height: 1.65em;
+    padding: 2em 1em;
+    color: white;
+
+}
+
+a {
+    color:#05a1f7;
+    text-decoration-line: none;
+    /* padding:.75em; */
+}
+
+a:hover {
+    color:#054288;
+    background-color:#7fa9da;
+} 
+
+li {
+    margin: 1.05em;
+}
+
+h1 {
+    line-height: 1.05em;
+}
+strong ,h1, h2,h3{
+    color:#277FFF;
+}
+
+h4 {
+    color: #05a1f7;
+}
+
+
+/* END TEMPLATE */
+
+/* INDEX */
+.centered {
+    text-align: center;
+}
+.welcome-text {
+    color: #277FFF;
+}
+
+/* END INDEX */
+
+.anon_pepe, .happy_music_pepe {
+    width:100px;
+    height: auto;
+    
+}
+
+
+
