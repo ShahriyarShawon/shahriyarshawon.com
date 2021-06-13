@@ -1,9 +1,4 @@
-/* Open when someone clicks on the span element */
-function openNav() {
-    document.getElementById("mobile-overlay-nav").style.height = "100%";
-  }
-  
-  /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeNav() {
-    document.getElementById("mobile-overlay-nav").style.height = "0%";
-  }
+function navtoggle(){
+    document.getElementById("nav-items").classList.toggle("active");
+    console.log("Happened");
+}

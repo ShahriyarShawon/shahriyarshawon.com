@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/static/styles/styles.css">
+    <link rel="stylesheet" href="/static/styles/main.css">
     <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,56 +16,36 @@
 
 <body>
     <div class="content">
-        <nav id="mobile-nav">
-            <a href="/index.html"><img class="nav-img" src="/static/favicon.png" alt=""></a>
-            <svg id="hamburger-menu" onclick="openNav()" viewBox="0 0 100 80" width="40" height="40">
-                <rect width="100" height="20"></rect>
-                <rect y="30" width="100" height="20"></rect>
-                <rect y="60" width="100" height="20"></rect>
-              </svg>
-        </nav>
+        <nav>
+            <nav class="scrollMenu">
+    <span class="navbar-toggle" onclick="navtoggle()">
+        <svg viewBox="0 0 100 80" width="40" height="40" id="hamburger">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+    </span>
+    
+    <img src="/static/favicon.png" id="favicon" alt="" srcset="">
+    <ul id="nav-items">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/static/currentResume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/ShahriyarShawon" target="_blank">GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UC6AgrsLgCqKQ39kHzLTo0mQ" target="_blank">YouTube</a></li>
+        <li><a href="/stuffIUse.html">Stuff I Use</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/coolLinks.html">Cool Links</a></li>
+        <li><a href="/musicILike.html">Music I Like</a></li>
+        <li><a href="/portfolio.html" >My Portfolio</a></li>
+    </ul>
 
-        <nav id="mobile-overlay-nav">
-            <div class="nav-item">
-                <svg xmlns="http://www.w3.org/2000/svg" onclick="closeNav()" id="svg-close" viewBox="0 0 40 40" width="60" height="60" enable-background="new 0 0 40 40">
-                    <line x1="15" y1="15" x2="25" y2="25" stroke="#277FFF" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10"></line>
-                    <line x1="25" y1="15" x2="15" y2="25" stroke="#277FFF" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10"></line>    
-                </svg>
-            </div>
 
-            <div class="nav-item">
-    <a href="/index.html">Home</a>
-</div>
-<div class="nav-item">
-    <a href="https://github.com/ShahriyarShawon" target="_blank">GitHub</a>
-</div>
-<div class="nav-item">
-    <a href="https://www.youtube.com/channel/UC6AgrsLgCqKQ39kHzLTo0mQ" target="_blank">YouTube</a>
-</div>
-<div class="nav-item">
-    <a href="/stuffIUse.html">Stuff I Use</a>
-</div>
-<div class="nav-item">
-    <a href="/coolLinks.html">Cool Links</a>
-</div>
-<div class="nav-item">
-    <a href="/musicILike.html">Music I Like</a>    
-</div>
-<div class="nav-item">
-    <a href="/portfolio.html" >My Portfolio</a>
-</div>
-<div class="nav-item">
-    <a href="/static/currentResume.pdf" target="_blank">Resume</a>
-</div>
-<div class="nav-item">
-    <a href="/guides/">Guides</a>
-</div>
-
+</nav>
             
-
         </nav>
 
-        
+        <div class="main-content">
+            
 <h1>Here's some guides I wrote</h1>
 <p>Most of these are for myself and only include issues I encountered.
     Keep this in mind while browsing.
@@ -74,6 +54,7 @@
     <h3>Stuff I Use in/for college</h3>
 </a>
 
+        </div>
         
     </div>
 
