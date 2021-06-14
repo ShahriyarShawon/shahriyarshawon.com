@@ -35,8 +35,9 @@ body a {
 nav {
   padding-bottom: 20px;
   margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
+}
+nav .navbar-toggle {
+  float: right;
 }
 nav .navbar-toggle #hamburger {
   fill: #277FFF;
