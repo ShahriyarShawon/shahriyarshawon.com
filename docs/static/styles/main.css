@@ -34,11 +34,9 @@ body a {
 
 nav {
   padding-bottom: 20px;
-}
-nav .navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 nav .navbar-toggle #hamburger {
   fill: #277FFF;
@@ -46,7 +44,6 @@ nav .navbar-toggle #hamburger {
 nav #favicon {
   display: inline-block;
   width: 50px;
-  margin: 10px 0 0 20px;
 }
 nav ul {
   display: none;
