@@ -15,16 +15,9 @@
 </head>
 
 <body>
-    <div class="content">
-        <nav>
-            {% include 'nav.html' %}
-            {% block navitem %}{% endblock navitem %}
-        </nav>
-
-        <div class="main-content">
-            {% block content %}{% endblock content%}
-        </div>
-        
+    <div class="main-content">
+        {% include 'nav.html' %}
+        {% block content %}{% endblock content%}        
     </div>
 
     <script src="/static/scripts/script.js"></script>

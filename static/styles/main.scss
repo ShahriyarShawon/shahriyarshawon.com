@@ -46,21 +46,21 @@ body {
 
 nav {
     padding-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
 
     .navbar-toggle {
         #hamburger {
             fill: $accent-color;
         }
-        position: absolute;
-        top: 10px;
-        right: 20px;
         
     }
     
     #favicon {
         display: inline-block;
         width: 50px; 
-        margin: 10px 0 0 20px;
     }
     ul {
         display:none;
@@ -122,8 +122,10 @@ nav {
 
 
 @media only screen and (min-width: 900px) {
-    .main-content {
+    .main-content{
         width: 60vw;
         margin: 0 auto;
     }
+    
+    
 }
