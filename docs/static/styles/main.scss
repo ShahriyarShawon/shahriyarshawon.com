@@ -120,6 +120,17 @@ nav {
 }
 
 
+#xmr-copy {
+    background-color: $bg-color;
+    border: none;
+    cursor: pointer;
+    color: $accent-emerald;
+    font-size: 1.3em;
+}
+#xmraddr {
+    display:none;
+}
+
 @media only screen and (min-width: 900px) {
     .main-content{
         width: 60vw;

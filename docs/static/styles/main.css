@@ -99,6 +99,18 @@ nav ul li a:hover {
   height: auto;
 }
 
+#xmr-copy {
+  background-color: #272a34;
+  border: none;
+  cursor: pointer;
+  color: #50c878;
+  font-size: 1.3em;
+}
+
+#xmraddr {
+  display: none;
+}
+
 @media only screen and (min-width: 900px) {
   .main-content {
     width: 60vw;
