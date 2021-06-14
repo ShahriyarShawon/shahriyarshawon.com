@@ -1,5 +1,7 @@
 from flask import Flask, render_template, url_for
 
+import os
+
 app = Flask(__name__)
 app.config["FREEZER_DESTINATION"] = "docs/"
 
@@ -11,11 +13,3 @@ def index():
 def rootPage(page):
     return render_template(f"root/{page}")
 
-
-@app.route("/guides/")
-def guides():
-    return render_template("guides/index.html")
-
-@app.route("/guides/<guide_name>")
-def specificGuide(guide_name):
-    return render_template(f"guides/{guide_name}")
