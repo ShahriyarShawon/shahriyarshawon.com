@@ -6,11 +6,11 @@ $accent-light: #05a1f7;
 $accent-emerald: #50c878;
 $accent-lemon: #fff44f;
 
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0;
-}
+// * {
+//     box-sizing: border-box;
+//     padding: 0px;
+//     margin: 0;
+// }
 
 body {
     .active {
@@ -62,6 +62,7 @@ nav {
         width: 50px; 
     }
     ul {
+        padding-left: 0;
         display:none;
         list-style-type: none;
         li {
@@ -99,7 +100,7 @@ nav {
     margin: 0 20px 20px 20px;
     li {
         line-height: 2em;
-        margin-left: 20px;
+        // margin-left: 20px;
     }
     p {
         line-height: 1.5em;
