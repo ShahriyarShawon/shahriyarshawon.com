@@ -131,6 +131,10 @@ nav {
     display:none;
 }
 
+.welcome-text {
+    color: $accent-violet;
+}
+
 @media only screen and (min-width: 900px) {
     .main-content{
         width: 60vw;

@@ -111,6 +111,10 @@ nav ul li a:hover {
   display: none;
 }
 
+.welcome-text {
+  color: #c957fa;
+}
+
 @media only screen and (min-width: 900px) {
   .main-content {
     width: 60vw;
