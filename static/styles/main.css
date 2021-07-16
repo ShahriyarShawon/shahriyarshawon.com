@@ -30,6 +30,11 @@ nav {
   padding-bottom: 20px;
   margin-top: 10px;
 }
+nav #nav-items {
+  border-bottom-color: #50c878;
+  border-radius: 2px;
+  border-bottom-style: solid;
+}
 nav .navbar-toggle {
   float: right;
 }
