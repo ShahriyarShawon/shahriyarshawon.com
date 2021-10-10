@@ -16,3 +16,10 @@ function copyXMR() {
   /* Alert the copied text */
   alert("Copied the text: " + copyText.value);
 }
+
+
+function toggleAnonPepe(){
+  document.getElementById("anon_pepe").classList.toggle("hidden");
+
+
+}
