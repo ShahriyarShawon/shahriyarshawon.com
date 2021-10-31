@@ -137,6 +137,26 @@ nav ul li a:hover {
   color: #c957fa;
 }
 
+.tool-form label {
+  display: block;
+  color: #c957fa;
+  font-size: 2em;
+}
+
+.tool-form input {
+  display: block;
+  font-size: 2em;
+}
+
+.tool-form button {
+  background-color: #277FFF;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 1.35em;
+  margin-top: 5px;
+}
+
 @media only screen and (min-width: 900px) {
   .main-content {
     width: 60vw;

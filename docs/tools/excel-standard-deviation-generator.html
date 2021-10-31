@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     
-    <title>Donate</title>
+<script src="/static/scripts/tools.js"></script>
+
+    <title></title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SR08T6MJZ9"></script>
@@ -56,22 +58,19 @@
 </nav>
         
 
-<h1>Donations</h1>
-<ul>
-    <li>
-        <h2><a href="https://paypal.me/ShahriyarRulez?locale.x=en_US" target="_blank">PayPal</a></h2>
-    </li>
-    <li>
-        <h2>XMR (Monero)</h2>
-        <button onclick="copyXMR()" id="xmr-copy">Copy XMR address to clipboard</button>
-        <input type="text" name="xmraddr" id="xmraddr" value="41ozgoRdDdAHEt5Viyzk78YUudnVB1eK58jthqtzsRDuSxxswWewYHV42181ifhpRy9tYW6ZH1KxT9BKDuPysoY8F8mfWjK">
-        <br>
-        <img src="/static/monero-wallet-qr.png" alt="">
+<div class="tool-form">
 
-    </li>
-</ul>
+    <label for="columns">Enter the columns (Letters)</label>
+    <input type="text" name="columns" id="columns">
+    <label for="rows">Enter the rows (Numbers)</label>
+    <input type="text" name="rows" id="rows">
+    <button type="submit" onclick="genEq()">Generate Excel Equation</button>
 
 
+</div>
+
+
+<h3 id="eq" style="font-family:monospace"></h3>
 
         
     </div>

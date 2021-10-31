@@ -13,3 +13,12 @@ def index():
 def rootPage(page):
     return render_template(f"root/{page}")
 
+# @app.route("/tools/")
+# def tools():
+#     return render_template("root/tools/index.html")
+
+@app.route("/tools/")
+@app.route("/tools/<page>")
+def toolPages(page = "index.html"):
+    return render_template(f"tools/{page}")
+

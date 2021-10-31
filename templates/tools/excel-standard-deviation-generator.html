@@ -1,0 +1,26 @@
+{% extends 'template.html' %}
+
+{% block head %}
+<script src="/static/scripts/tools.js"></script>
+{% endblock head %}
+{% block title %}{% endblock title %}
+{% block content %}
+
+<div class="tool-form">
+
+    <label for="columns">Enter the columns (Letters)</label>
+    <input type="text" name="columns" id="columns">
+    <label for="rows">Enter the rows (Numbers)</label>
+    <input type="text" name="rows" id="rows">
+    <button type="submit" onclick="genEq()">Generate Excel Equation</button>
+
+
+</div>
+
+
+<h3 id="eq" style="font-family:monospace"></h3>
+
+{% endblock content %}
+
+
+

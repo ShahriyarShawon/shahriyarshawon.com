@@ -138,6 +138,30 @@ nav {
     color: $accent-violet;
 }
 
+.tool-form {
+    label {
+        display: block;
+        color: $accent-violet;
+        font-size: 2em;
+
+    }
+
+    input {
+        display: block;
+        font-size: 2em;
+    }
+
+    button {
+        background-color: $accent-color;
+        border: none;
+        color: white;
+        padding: 10px;
+        font-size: 1.35em;
+        margin-top: 5px;
+    }
+
+}
+
 @media only screen and (min-width: 900px) {
     .main-content{
         width: 60vw;
