@@ -4,13 +4,6 @@ This tutorial assumes that you have a vps or some type of system where
 arch linux is setup and you are able to access it using `ssh` or any
 other means. This is not an arch setup tutorial. 
 
-## Table of Contents
-1. [You'll Need](#youll-need)
-2. [Get Everything Installed](#get-everything-installed)
-3. [Setup Server](#setup-server)
-4. [Startup Script](#startup-script)
-5. [Keep Server Running Without SSH Connection](#keep-server-running-without-ssh-connection)
-6. [Connect To Server Using Domain Name](#connect-to-server-using-domain-name)
 
 ## You'll Need
 - On Server
