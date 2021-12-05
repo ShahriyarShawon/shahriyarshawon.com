@@ -37,6 +37,10 @@ body a {
   color: #277FFF;
 }
 
+body code, body pre {
+  font-size: 1.15em;
+}
+
 nav {
   padding-bottom: 20px;
   margin-top: 10px;

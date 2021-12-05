@@ -39,6 +39,11 @@ body {
     a {
         color: $accent-color;
     }
+
+    code,pre {
+        font-size: 1.15em;
+    }
+    
 }
 
 nav {

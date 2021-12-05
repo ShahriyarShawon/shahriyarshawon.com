@@ -1,0 +1,15 @@
+{% extends 'template.html' %}
+
+{% block head %}
+{% endblock head %}
+
+{% block title %}Guides{% endblock title %}
+
+{% block content %}
+<h1>Guides</h1>
+<ul>
+    {% for filename, title in files_to_titles.items()%}
+    <li><a href="/guides/{{filename}}">{{title}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock content %}
