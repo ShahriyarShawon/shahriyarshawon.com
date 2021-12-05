@@ -128,15 +128,10 @@ nav {
 }
 
 
-#xmr-copy {
-    background-color: $bg-color;
-    border: none;
-    cursor: pointer;
-    color: $accent-emerald;
-    font-size: 1.3em;
-}
-#xmraddr {
-    display:none;
+.wrap-text {
+    /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .welcome-text {
@@ -147,13 +142,15 @@ nav {
     label {
         display: block;
         color: $accent-violet;
-        font-size: 2em;
+        font-size: 1.65em;
 
     }
 
     input {
         display: block;
-        font-size: 2em;
+        width: 80%;
+        font-size: 1.65em;
+        margin-bottom: 10px;
     }
 
     button {
@@ -173,5 +170,15 @@ nav {
         margin: 0 auto;
     }
     
+    
+}
+
+@media only screen and (min-width: 470px) {
+
+    .tool-form {
+        input {
+            width: 330px;
+        }
+    }
     
 }

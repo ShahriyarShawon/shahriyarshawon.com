@@ -125,16 +125,10 @@ nav ul li a:hover {
   height: auto;
 }
 
-#xmr-copy {
-  background-color: #272a34;
-  border: none;
-  cursor: pointer;
-  color: #50c878;
-  font-size: 1.3em;
-}
-
-#xmraddr {
-  display: none;
+.wrap-text {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .welcome-text {
@@ -144,12 +138,14 @@ nav ul li a:hover {
 .tool-form label {
   display: block;
   color: #c957fa;
-  font-size: 2em;
+  font-size: 1.65em;
 }
 
 .tool-form input {
   display: block;
-  font-size: 2em;
+  width: 80%;
+  font-size: 1.65em;
+  margin-bottom: 10px;
 }
 
 .tool-form button {
@@ -165,6 +161,12 @@ nav ul li a:hover {
   .main-content {
     width: 60vw;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 470px) {
+  .tool-form input {
+    width: 330px;
   }
 }
 /*# sourceMappingURL=main.css.map */
