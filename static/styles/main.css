@@ -41,6 +41,15 @@ body code, body pre {
   font-size: 1.15em;
 }
 
+body #bootstrap-pacman {
+  margin-bottom: 10px;
+  padding: 5px;
+  display: block;
+  border-style: solid;
+  border-color: #c957fa;
+  border-width: 1px;
+}
+
 nav {
   padding-bottom: 20px;
   margin-top: 10px;

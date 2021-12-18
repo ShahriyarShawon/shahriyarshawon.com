@@ -2,10 +2,6 @@
 
 {% block head %}{% endblock head %}
 {% block title %}Stuff I Use{% endblock title %}
-
-
-
-
 {% block content %}
 <!-- TODO -->
 <!-- Need to turn all these entry-items into things I can dynamically
@@ -21,14 +17,21 @@ Look at them and edit them to your liking before actually using them as your own
 I am not responsible for any breakage of your system.
 </p>
 
+
+<p>Command to install all the packages below that are in the Arch Official repos: </p>
+<code id="bootstrap-pacman">
+    sudo pacman -S stow rofi mtpfs gvfs-mtp gvfs-gphoto2 p7zip zip unzip file-roller blueberry bluez bluez-utils
+    networkmanager ifplugd xfce4 thunar ntfs-3g xorg-xrandr arandr alacritty flameshot dunst 
+    simple-scan copyq code sxhkd peek shotcut losslesscut obs-studio mpv
+</code>
+
 <div class="entry-item">
-    <strong>Dotfiles -></strong>
-    <a href="https://github.com/ShahriyarShawon/shays_dotfiles" target="_blank">GitHub</a>
+    <strong>Dotfiles (Using Stow) -></strong>
+    <a href="https://github.com/ShahriyarShawon/stow" target="_blank">GitHub</a>
 </div>
 
-
 <div class="entry-item">
-    <strong>App Launcher -></strong>rofi
+    <strong>App Launcher -></strong> rofi
     <a href="https://github.com/davatorium/rofi" target="_blank">GitHub</a>
     <a href="https://wiki.archlinux.org/index.php/Rofi" target="_blank">ArchWiki</a>
 
@@ -38,7 +41,6 @@ I am not responsible for any breakage of your system.
     <strong>Android Mounter -></strong>
     mtpfs, gvfs-mtp, gvfs-gphoto2
 </div>
-
 <div class="entry-item">
     <strong>Archiving/Compression -></strong>
     p7zip, zip, unzip, unrar, rar
@@ -76,9 +78,6 @@ I am not responsible for any breakage of your system.
         You will also need gvfs if you want to auto mount drives
         This will most likely be preinstalled, but if its not,
         there you go</p>
-
-
-
 </div>
 <div class="entry-item">
     <strong>Display Manager -></strong>
@@ -121,8 +120,12 @@ code (VSCode/VSCodium)
 <a href="https://aur.archlinux.org/packages/vscodium-bin/">AUR</a>
 </div>
 <div class="entry-item">
-    <strong>Theme -></strong>
+    <strong>VSCode Theme -></strong>
     One Dark Pro Theme
+</div>
+<div class="entry-item">
+    <strong>GTK Theme -></strong>
+    Arc Dark
 </div>
 <div class="entry-item">
     <strong>Hotkeys -></strong>
@@ -160,15 +163,7 @@ Spotify
 </p>
 </div>
 
-
-
-
-
-
-
 <img src="/static/happy_music_pepe.gif" class="anon_pepe" alt="">
-
-
 
 <h2>Devices I have/use</h2>
 <h3>Computers</h3>
@@ -186,7 +181,6 @@ Much better than windows for almost anything related to coding.
 Has a unix-like shell unlike powershell/cmd
 </p>
 
-
 <h4>A Raspberry Pi 3B+</h4>
 <p>Literally nothing right now</p>
 
@@ -199,13 +193,9 @@ Has a unix-like shell unlike powershell/cmd
 
 <h3>Misc</h3>
 
-
 <h4>Shanwan PS3/XBOX/Android/PC USB Controller</h4>
 <p>just a cheapo controller I bought for emulation</p>
 
-
 <h4>Huion H420 Pen and Tablet</h4>
 <p>Info on how to set up soon</p>
-
-
 {% endblock content %}

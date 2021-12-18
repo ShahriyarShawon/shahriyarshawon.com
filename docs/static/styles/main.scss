@@ -43,6 +43,15 @@ body {
     code,pre {
         font-size: 1.15em;
     }
+
+    #bootstrap-pacman {
+        margin-bottom: 10px;
+        padding: 5px;
+        display:block;
+        border-style: solid;
+        border-color: $accent-violet;
+        border-width: 1px;
+    }
     
 }
 
