@@ -50,7 +50,6 @@
         <li><a href="/stuffIUse.html">Stuff I Use</a></li>
         <li><a href="/tools">Tools</a></li>
         <li><a href="https://imgur.com/gallery/GFCpr8n" target="_blank">Cool Backgrounds</a></li>
-        <li><a href="/coolLinks.html">Cool Links</a></li>
         <li><a href="https://www.youtube.com/channel/UC6AgrsLgCqKQ39kHzLTo0mQ" target="_blank">YouTube</a></li>
         <li><a href="/musicILike.html">Music I Like</a></li>
     </ul>
@@ -85,7 +84,7 @@ other means. This is not an arch setup tutorial. </p>
 </ul>
 <h2>Get Everything Installed</h2>
 <p>Remember this is a tutorial for Arch Linux so I'll be providing the package name for <code>pacman</code> and not <code>apt</code>.</p>
-<div class="codehilite"><pre><span></span><code>sudo pacman -s screen curl jdk-opendjk nano
+<div class="codehilite"><pre><span></span><code>sudo<span class="w"> </span>pacman<span class="w"> </span>-s<span class="w"> </span>screen<span class="w"> </span>curl<span class="w"> </span>jdk-opendjk<span class="w"> </span>nano
 </code></pre></div>
 
 <p>Substitute out <code>nano</code> for <code>vim</code> if needed and feel free to leave out <code>curl</code> if its already installed.</p>
@@ -100,10 +99,10 @@ link address</li>
 </li>
 <li>make directory for server</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>mkdir mcserver
-<span class="nb">cd</span> mcserver
-curl -o server.jar https://serverjars.com/api/fetchJar/vanilla/1.18
-java -jar server.jar
+<div class="codehilite"><pre><span></span><code>mkdir<span class="w"> </span>mcserver
+<span class="nb">cd</span><span class="w"> </span>mcserver
+curl<span class="w"> </span>-o<span class="w"> </span>server.jar<span class="w"> </span>https://serverjars.com/api/fetchJar/vanilla/1.18
+java<span class="w"> </span>-jar<span class="w"> </span>server.jar
 </code></pre></div>
 
 <p>That last command will generate the <code>eula.txt</code> document that you need
@@ -114,20 +113,20 @@ add <code>-Xmx3G</code> to tell java to use 3GB of ram for the server. You can
 replace the 3 to however much ram you want to dedicate towards the 
 server.</p>
 <p>The final command ends up being </p>
-<div class="codehilite"><pre><span></span><code>java -jar -Xmx3G server.jar
+<div class="codehilite"><pre><span></span><code>java<span class="w"> </span>-jar<span class="w"> </span>-Xmx3G<span class="w"> </span>server.jar
 </code></pre></div>
 
 <p>I don't want to type out this command everytime I want to start up my
 server so I put this command in a file called <code>runserver.sh</code></p>
 <h2>Startup Script</h2>
 <div class="codehilite"><pre><span></span><code><span class="c1"># create runserver.sh file</span>
-touch runserver.sh
-nano runserver.sh
+touch<span class="w"> </span>runserver.sh
+nano<span class="w"> </span>runserver.sh
 </code></pre></div>
 
 <p>Next put the following into the file</p>
 <div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-java -jar -Xmx3G server.jar
+java<span class="w"> </span>-jar<span class="w"> </span>-Xmx3G<span class="w"> </span>server.jar
 </code></pre></div>
 
 <p>Save and exit your file and then run <code>chmod +x runserver.sh</code> to make
