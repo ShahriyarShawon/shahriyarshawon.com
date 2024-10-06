@@ -1,63 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/static/styles/main.css">
-    <link rel="stylesheet" href="/static/styles/code.css">
-    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    
+{% extends 'template.html' %}
+{% block head %}
 <script src="/static/scripts/tools.js"></script>
-
-    <title></title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SR08T6MJZ9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-SR08T6MJZ9');
-    </script>
-</head>
-
-<body>
-    <div class="main-content">
-        <nav class="scrollMenu">
-    
-    <a href="/index.html">
-        <img src="/static/favicon.png" id="favicon" alt="" srcset="">
-    </a>
-    
-    <span class="navbar-toggle" onclick="navtoggle()">
-        <svg viewBox="0 0 100 80" width="40" height="40" id="hamburger">
-            <rect width="100" height="20"></rect>
-            <rect y="30" width="100" height="20"></rect>
-            <rect y="60" width="100" height="20"></rect>
-          </svg>
-    </span>
-    <ul id="nav-items">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/static/Shahriyar-Shawon-Resume.pdf" target="_blank">Resume</a></li>
-        <li><a href="https://github.com/ShahriyarShawon" target="_blank">GitHub</a></li>
-        <li><a href="/guides">Guides</a></li>
-        <li><a href="/stuffIUse.html">Stuff I Use</a></li>
-        <li><a href="/tools">Tools</a></li>
-        <li><a href="https://imgur.com/gallery/GFCpr8n" target="_blank">Cool Backgrounds</a></li>
-        <li><a href="/coolLinks.html">Cool Links</a></li>
-        <li><a href="https://www.youtube.com/channel/UC6AgrsLgCqKQ39kHzLTo0mQ" target="_blank">YouTube</a></li>
-        <li><a href="/musicILike.html">Music I Like</a></li>
-    </ul>
-
-
-</nav>
-        
+{% endblock head %}
+{% block title %}{% endblock title %}
+{% block content %}
+<a href=/posts/><- See All Blog Posts</a><p>Last Updated: 12/05/2021
+Date Created: 12/05/2021</p>
 <h1>How to create Minecraft 1.18 server with domain name in Arch Linux</h1>
 <p>This tutorial assumes that you have a vps or some type of system where
 arch linux is setup and you are able to access it using <code>ssh</code> or any
@@ -171,11 +119,4 @@ screen</code> or go to the <a href="https://www.gnu.org/software/screen/manual/s
 should be able to connect using mc.domain.tld</p>
 <p>eg.</p>
 <p>minecraft.shahriyarshawon.com</p>
-        
-    </div>
-
-    <script src="/static/scripts/script.js"></script>
-
-</body>
-
-</html>
+{% endblock content %}

@@ -1,0 +1,40 @@
+{% extends 'template.html' %}
+
+{% block head %}
+<style>
+	table {
+		border-collapse: collapse;
+	}
+
+	td {
+		padding: 5px;
+		border: 1px solid white;
+	}
+
+	tr {
+		border-bottom: 1px solid white;
+	}
+</style>
+
+{% endblock head %}
+
+{% block title %}Blog Posts{% endblock title %}
+
+{% block content %}
+<h1>Blog Posts</h1>
+<table>
+	<tr>
+		<th>Date Created</th>
+		<th>Last Updated</th>
+		<th>Title</th>
+	</tr>
+
+	{% for filename, title in files_to_titles.items()%}
+    <tr>
+		<td>{{date_created}}</td>
+		<td>{{last_updated}}</td>
+		<td><a href="/posts/{{filename}}">{{title}}</a></td>
+	</tr>
+	{% endfor %}
+</table>
+{% endblock content %}
