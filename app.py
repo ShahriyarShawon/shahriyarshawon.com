@@ -13,25 +13,20 @@ def index():
 def rootPage(page):
     return render_template(f"root/{page}")
 
-@app.route("/tools/")
-@app.route("/tools/<page>")
-def toolPages(page = "index.html"):
-    return render_template(f"tools/{page}")
-
-@app.route("/guides/")
-@app.route("/guides/<page>")
+@app.route("/blog/")
+@app.route("/blog/<page>")
 def guidePages(page = "index.html"):
     if page == "index.html":
         files_to_titles = {}
-        for entry in os.scandir("templates/guides/"):
+        for entry in os.scandir("templates/blog/"):
             filename = entry.name
             article_name = filename.replace("-", " ").replace(".html","")
             article_name = article_name.capitalize()
             
             files_to_titles[filename] = article_name
         del files_to_titles["index.html"]
-        return render_template(f"guides/{page}", files_to_titles=files_to_titles)
+        return render_template(f"blog/{page}", files_to_titles=files_to_titles)
 
-    return render_template(f"guides/{page}")
+    return render_template(f"blog/{page}")
 
 

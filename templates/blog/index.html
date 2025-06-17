@@ -3,13 +3,13 @@
 {% block head %}
 {% endblock head %}
 
-{% block title %}Guides{% endblock title %}
+{% block title %}Posts{% endblock title %}
 
 {% block content %}
-<h1>Guides</h1>
+<h1>Posts</h1>
 <ul>
     {% for filename, title in files_to_titles.items()%}
-    <li><a href="/guides/{{filename}}">{{title}}</a></li>
+    <li><a href="/blog/{{filename}}">{{title}}</a></li>
     {% endfor %}
 </ul>
 {% endblock content %}

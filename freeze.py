@@ -13,13 +13,8 @@ def rootPage():
         yield {'page': page}
 
 @freezer.register_generator
-def toolPages():
-    for page in os.listdir("templates/tools/"):
-        yield {'page': page}
-
-@freezer.register_generator
 def guidePages():
-    for page in os.listdir("templates/guides/"):
+    for page in os.listdir("templates/blog/"):
         yield {'page': page}
 
 def gen_blog():
@@ -28,10 +23,9 @@ def gen_blog():
             filename = entry.name.replace("md","")
             content = f.read()
             html = markdown.markdown(content, extensions=['fenced_code', 'codehilite'])
-            with open(f"templates/guides/{filename}html", "w") as f:
+            with open(f"templates/blog/{filename}html", "w") as f:
                 f.write("{% extends 'template.html' %}\n")
                 f.write("{% block head %}\n")
-                f.write("<script src=\"/static/scripts/tools.js\"></script>\n")
                 f.write("{% endblock head %}\n")
                 f.write("{% block title %}{% endblock title %}\n")
                 f.write("{% block content %}\n")
