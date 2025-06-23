@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{- partial "head.html" . -}}
+  <body>
+    <div class="main-content">
+	{{- partial "nav.html" . -}}
+
+      {{ block "main" . }} {{ end }}
+    </div>
+
+	<script src="{{ absURL `scripts/script.js`}}"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+baseURL = 'https://shahriyarshawon.com/'
+languageCode = 'en-us'
+title = 'RareCandyMaster Blog'
+theme = 'rarecandymaster-theme'

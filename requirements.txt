@@ -1,4 +1,0 @@
-flask
-Frozen-Flask
-pygments
-markdown
