@@ -1,0 +1,181 @@
+body {
+  font-family: Inter;
+  background-color: #272a34;
+  color: white;
+}
+
+body .active {
+  display: block;
+}
+
+body .hidden {
+  display: none;
+}
+
+body h1 {
+  color: #277FFF;
+  margin-bottom: 20px;
+}
+
+body h2 {
+  color: #05a1f7;
+}
+
+body h3 {
+  color: #50c878;
+}
+
+body h4 {
+  color: #c957fa;
+}
+
+body h2, body h3, body h4 {
+  margin-bottom: 5px;
+}
+
+body a {
+  color: #277FFF;
+}
+
+body code, body pre {
+  font-size: 1.15em;
+}
+
+body #bootstrap-pacman {
+  margin-bottom: 10px;
+  padding: 5px;
+  display: block;
+  border-style: solid;
+  border-color: #c957fa;
+  border-width: 1px;
+}
+
+nav {
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+nav #nav-items {
+  border-bottom-color: #50c878;
+  border-radius: 2px;
+  border-bottom-style: solid;
+}
+
+nav .navbar-toggle {
+  float: right;
+}
+
+nav .navbar-toggle #hamburger {
+  fill: #277FFF;
+}
+
+nav #favicon {
+  display: inline-block;
+  width: 50px;
+}
+
+nav ul {
+  padding-left: 0;
+  display: none;
+  list-style-type: none;
+}
+
+nav ul li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  color: #272a34;
+  background-color: #05a1f7;
+}
+
+#warning {
+  color: #ff2400;
+}
+
+.note {
+  color: #fff44f;
+}
+
+.main-content {
+  margin: 0 20px 20px 20px;
+}
+
+.main-content .centered {
+  text-align: center;
+}
+
+.main-content li {
+  line-height: 2em;
+}
+
+.main-content p {
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.entry-item {
+  margin-bottom: 10px;
+}
+
+.entry-item strong {
+  color: #50c878;
+}
+
+.anon_pepe {
+  width: 200px;
+  height: auto;
+}
+
+.wrap-text {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.welcome-text {
+  color: #c957fa;
+}
+
+.tool-form label {
+  display: block;
+  color: #c957fa;
+  font-size: 1.65em;
+}
+
+.tool-form input {
+  display: block;
+  width: 80%;
+  font-size: 1.65em;
+  margin-bottom: 10px;
+}
+
+.tool-form button {
+  background-color: #277FFF;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 1.35em;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 900px) {
+  .main-content {
+    width: 60vw;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 470px) {
+  .tool-form input {
+    width: 330px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

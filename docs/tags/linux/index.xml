@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on RareCandyMaster Blog</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on RareCandyMaster Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Nov 2024 00:51:33 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Set Up Printing for Brother MFC L2710DW on (Arch) Linux</title>
+      <link>http://localhost:1313/posts/how-to-set-up-printing-for-brother-mfc-l2710dw-on-arch-linux/</link>
+      <pubDate>Thu, 21 Nov 2024 00:51:33 -0500</pubDate>
+      <guid>http://localhost:1313/posts/how-to-set-up-printing-for-brother-mfc-l2710dw-on-arch-linux/</guid>
+      <description>As of 2024 there was a vulnerability found in CUPS so instead of running systemctl enable cups.service you should probably just explicitly start it with systemctl start cups.service when you need to print.&#xA;Installation Find the packages for your distro if not on Arch cups ghostscript The driver will either need to be obtained via the manufacturer or check to see if your package repositories have it anywhere, AUR has the driver for my printer</description>
+    </item>
+    <item>
+      <title>How to create Minecraft 1.18 server with domain name in Arch Linux</title>
+      <link>http://localhost:1313/posts/how-to-create-minecraft-1.18-server-with-domain-name-in-arch-linux/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-to-create-minecraft-1.18-server-with-domain-name-in-arch-linux/</guid>
+      <description>This tutorial assumes that you have a vps or some type of system where arch linux is setup and you are able to access it using ssh or any other means. This is not an arch setup tutorial.&#xA;You&amp;rsquo;ll Need On Server&#xA;screen curl jdk (16&amp;gt;=) vim/nano On Local Machine&#xA;ssh client (putty or just ssh command from terminal) A namecheap domain&#xA;Get Everything Installed Remember this is a tutorial for Arch Linux so I&amp;rsquo;ll be providing the package name for pacman and not apt.</description>
+    </item>
+  </channel>
+</rss>

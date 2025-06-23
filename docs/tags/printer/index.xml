@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Printer on RareCandyMaster Blog</title>
+    <link>http://localhost:1313/tags/printer/</link>
+    <description>Recent content in Printer on RareCandyMaster Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Nov 2024 00:51:33 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/printer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Set Up Printing for Brother MFC L2710DW on (Arch) Linux</title>
+      <link>http://localhost:1313/posts/how-to-set-up-printing-for-brother-mfc-l2710dw-on-arch-linux/</link>
+      <pubDate>Thu, 21 Nov 2024 00:51:33 -0500</pubDate>
+      <guid>http://localhost:1313/posts/how-to-set-up-printing-for-brother-mfc-l2710dw-on-arch-linux/</guid>
+      <description>As of 2024 there was a vulnerability found in CUPS so instead of running systemctl enable cups.service you should probably just explicitly start it with systemctl start cups.service when you need to print.&#xA;Installation Find the packages for your distro if not on Arch cups ghostscript The driver will either need to be obtained via the manufacturer or check to see if your package repositories have it anywhere, AUR has the driver for my printer</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+
+<!-- List all blog posts -->
+    {{ range where .Site.RegularPages "Section" "posts"}}
+        <article>
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <time>{{ .Date.Format "January 2, 2006" }}</time>
+            <p>{{ .Summary }}</p>
+            <a href="{{ .RelPermalink }}">Read more →</a>
+        </article>
+    {{ end }}
+{{ end }}

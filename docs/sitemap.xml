@@ -2,22 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shahriyarshawon.com/posts/</loc>
-    <lastmod>2025-06-22T23:36:43-04:00</lastmod>
+    <loc>http://localhost:1313/tags/arch/</loc>
+    <lastmod>2024-11-21T00:51:33-05:00</lastmod>
   </url><url>
-    <loc>https://shahriyarshawon.com/</loc>
-    <lastmod>2025-06-22T23:36:43-04:00</lastmod>
+    <loc>http://localhost:1313/posts/how-to-set-up-printing-for-brother-mfc-l2710dw-on-arch-linux/</loc>
+    <lastmod>2024-11-21T00:51:33-05:00</lastmod>
   </url><url>
-    <loc>https://shahriyarshawon.com/aboutme/</loc>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2024-11-21T00:51:33-05:00</lastmod>
   </url><url>
-    <loc>https://shahriyarshawon.com/categories/</loc>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-11-21T00:51:33-05:00</lastmod>
   </url><url>
-    <loc>https://shahriyarshawon.com/coollinks/</loc>
+    <loc>http://localhost:1313/tags/printer/</loc>
+    <lastmod>2024-11-21T00:51:33-05:00</lastmod>
   </url><url>
-    <loc>https://shahriyarshawon.com/musicilike/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-11-21T00:51:33-05:00</lastmod>
   </url><url>
-    <loc>https://shahriyarshawon.com/stuffiuse/</loc>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-11-21T00:51:33-05:00</lastmod>
   </url><url>
-    <loc>https://shahriyarshawon.com/tags/</loc>
+    <loc>http://localhost:1313/posts/how-to-create-minecraft-1.18-server-with-domain-name-in-arch-linux/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/minecraft/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/aboutme/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/coollinks/</loc>
+  </url><url>
+    <loc>http://localhost:1313/musicilike/</loc>
+  </url><url>
+    <loc>http://localhost:1313/stuffiuse/</loc>
   </url>
 </urlset>

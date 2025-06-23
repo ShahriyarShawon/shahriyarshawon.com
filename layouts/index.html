@@ -1,13 +1,19 @@
 {{ define "main" }}
 
+<h1>Latest (5) Posts</h1>
+<h3>For more posts, go to <a href="/posts">Posts</a> or if you want to browse by tags, go to <a href="/tags">Tags</a></h3>
+<h4>For anything else, hit the hamburger menu</h4>
 
 <!-- List all blog posts -->
-    {{ range where .Site.RegularPages "Section" "posts"}}
-        <article>
-            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-            <time>{{ .Date.Format "January 2, 2006" }}</time>
-            <p>{{ .Summary }}</p>
-            <a href="{{ .RelPermalink }}">Read more →</a>
-        </article>
-    {{ end }}
-{{ end }}
+{{ range first 5 (where .Site.RegularPages "Section" "posts")}}
+<article>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <time>{{ .Date.Format "January 2, 2006" }}</time>
+  {{ if .Params.Tags }}
+	  <p>Tags: {{ partial "tags.html" . -}}</p>
+  {{ end }}
+  <p>{{ .Summary }}</p>
+  <a href="{{ .RelPermalink }}">Read more →</a>
+</article>
+<hr />
+{{ end }} {{ end }}

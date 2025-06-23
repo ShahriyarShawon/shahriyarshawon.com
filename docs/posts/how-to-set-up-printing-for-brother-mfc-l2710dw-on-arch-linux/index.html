@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="http://localhost:1313/styles/main.css">
+	<link rel="shortcut icon" href="http://localhost:1313/favicon.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <title>RareCandyMaster Blog</title>
+
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SR08T6MJZ9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SR08T6MJZ9");
+    </script>
+  </head>
+<body>
+    <div class="main-content"><nav class="scrollMenu">
+  <a href="/index.html">
+    <img src="http://localhost:1313/favicon.png" id="favicon" alt="" srcset="" />
+  </a>
+
+  <span class="navbar-toggle" onclick="navtoggle()">
+    <svg viewBox="0 0 100 80" width="40" height="40" id="hamburger">
+      <rect width="100" height="20"></rect>
+      <rect y="30" width="100" height="20"></rect>
+      <rect y="60" width="100" height="20"></rect>
+    </svg>
+  </span>
+  <ul id="nav-items">
+    <li><a href="/">Home</a></li>
+    <li><a href="/aboutme">About Me</a></li>
+    <li><a href="/posts">Posts</a></li>
+    <li><a href="/tags">Tags</a></li>
+    <li>
+      <a href="https://github.com/ShahriyarShawon" target="_blank">GitHub</a>
+    </li>
+    <li>
+      <a href="http://localhost:1313/Shahriyar-Shawon-Resume.pdf" target="_blank"
+        >Resume</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.youtube.com/channel/UC6AgrsLgCqKQ39kHzLTo0mQ"
+        target="_blank"
+        >YouTube</a
+      >
+    </li>
+    <li><a href="/stuffiuse">Stuff I Use</a></li>
+    <li>
+      <a href="https://imgur.com/gallery/GFCpr8n" target="_blank"
+        >Cool Backgrounds</a
+      >
+    </li>
+    <li><a href="/coollinks">Cool Links</a></li>
+    <li><a href="/musicilike">Music I Like</a></li>
+  </ul>
+</nav>
+
+<h1>How to Set Up Printing for Brother MFC L2710DW on (Arch) Linux</h1>
+<p>November 21, 2024</p>
+
+  Tags: 
+  <a href="http://localhost:1313/tags/linux">linux</a>
+
+  <a href="http://localhost:1313/tags/arch">arch</a>
+
+  <a href="http://localhost:1313/tags/printer">printer</a>
+
+
+<div><p><em><strong>As of 2024 there was a vulnerability found in CUPS so instead of running <code>systemctl enable cups.service</code> you should probably just
+explicitly start it with <code>systemctl start cups.service</code> when you need to print.</strong></em></p>
+<h1 id="installation">Installation</h1>
+<h3 id="find-the-packages-for-your-distro-if-not-on-arch">Find the packages for your distro if not on Arch</h3>
+<ul>
+<li><a href="https://repology.org/project/cups/versions">cups</a></li>
+<li><a href="https://repology.org/project/ghostscript/versions">ghostscript</a></li>
+</ul>
+<p>The driver will either need to be obtained via the manufacturer or check to see if your package repositories have it anywhere, AUR has the driver for my printer</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install Cups</span>
+</span></span><span style="display:flex;"><span>$ pacman -S cups
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install GhostScript</span>
+</span></span><span style="display:flex;"><span>$ pacman -S ghostscript
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install Drivers for Brother MFC L2710DW</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## The drivers on Arch is in the AUR</span>
+</span></span><span style="display:flex;"><span>$ paru MFC-L2710DW
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Start Cups</span>
+</span></span><span style="display:flex;"><span>$ systemctl start cups.service
+</span></span></code></pre></div><h1 id="configuration">Configuration</h1>
+<ul>
+<li>Navigate to <code>localhost:631</code> &gt; Administration &gt; Add Printer</li>
+<li>In <code>Connection</code> enter : <code>ipp://&lt;PRINTER_IP&gt;/ipp/port1</code></li>
+<li>Select Driver (I ended up choosing the &ldquo;IPP Everywhere&rdquo; driver)</li>
+</ul>
+<h4 id="note-the-section-mentioned-in-the-arch-wiki-is-slightly-different-now">Note: The section mentioned in the Arch Wiki is slightly different now</h4>
+</div>
+
+
+    </div>
+
+	<script src="http://localhost:1313/scripts/script.js"></script>
+  </body>
+</html>

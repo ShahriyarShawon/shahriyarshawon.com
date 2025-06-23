@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">  <head>
+<html lang="en">  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="https://shahriyarshawon.com/styles/main.css">
-	<link rel="shortcut icon" href="https://shahriyarshawon.com/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="http://localhost:1313/styles/main.css">
+	<link rel="shortcut icon" href="http://localhost:1313/favicon.png" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -31,7 +31,7 @@
 <body>
     <div class="main-content"><nav class="scrollMenu">
   <a href="/index.html">
-    <img src="https://shahriyarshawon.com/favicon.png" id="favicon" alt="" srcset="" />
+    <img src="http://localhost:1313/favicon.png" id="favicon" alt="" srcset="" />
   </a>
 
   <span class="navbar-toggle" onclick="navtoggle()">
@@ -45,11 +45,12 @@
     <li><a href="/">Home</a></li>
     <li><a href="/aboutme">About Me</a></li>
     <li><a href="/posts">Posts</a></li>
+    <li><a href="/tags">Tags</a></li>
     <li>
       <a href="https://github.com/ShahriyarShawon" target="_blank">GitHub</a>
     </li>
     <li>
-      <a href="https://shahriyarshawon.com/Shahriyar-Shawon-Resume.pdf" target="_blank"
+      <a href="http://localhost:1313/Shahriyar-Shawon-Resume.pdf" target="_blank"
         >Resume</a
       >
     </li>
@@ -73,10 +74,59 @@
 
 <ul>
   
+  
+  
+  <li>
+  <h3>
+    <a href="/posts/how-to-set-up-printing-for-brother-mfc-l2710dw-on-arch-linux/"> How to Set Up Printing for Brother MFC L2710DW on (Arch) Linux </a>
+  </h3>
+  
+  <p>November 21, 2024</p>
+   
+  <p>Tags: 
+  <a href="http://localhost:1313/tags/linux">linux</a>
+
+  <a href="http://localhost:1313/tags/arch">arch</a>
+
+  <a href="http://localhost:1313/tags/printer">printer</a>
+
+</p>
+   
+  <p>Summary: As of 2024 there was a vulnerability found in CUPS so instead of running systemctl enable cups.service you should probably just explicitly start it with systemctl start cups.service when you need to print.
+Installation Find the packages for your distro if not on Arch cups ghostscript The driver will either need to be obtained via the manufacturer or check to see if your package repositories have it anywhere, AUR has the driver for my printer</p>
+  
+</li>
+
+  
+  
+  <li>
+  <h3>
+    <a href="/posts/how-to-create-minecraft-1.18-server-with-domain-name-in-arch-linux/"> How to create Minecraft 1.18 server with domain name in Arch Linux </a>
+  </h3>
+  
+  <p>July 2, 2022</p>
+   
+  <p>Tags: 
+  <a href="http://localhost:1313/tags/linux">linux</a>
+
+  <a href="http://localhost:1313/tags/arch">arch</a>
+
+  <a href="http://localhost:1313/tags/minecraft">minecraft</a>
+
+</p>
+   
+  <p>Summary: This tutorial assumes that you have a vps or some type of system where arch linux is setup and you are able to access it using ssh or any other means. This is not an arch setup tutorial.
+You&rsquo;ll Need On Server
+screen curl jdk (16&gt;=) vim/nano On Local Machine
+ssh client (putty or just ssh command from terminal) A namecheap domain
+Get Everything Installed Remember this is a tutorial for Arch Linux so I&rsquo;ll be providing the package name for pacman and not apt.</p>
+  
+</li>
+
 </ul>
 
     </div>
 
-	<script src="https://shahriyarshawon.com/scripts/script.js"></script>
+	<script src="http://localhost:1313/scripts/script.js"></script>
   </body>
 </html>

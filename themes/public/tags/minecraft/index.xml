@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minecraft on RareCandyMaster Blog</title>
+    <link>http://localhost:1313/tags/minecraft/</link>
+    <description>Recent content in Minecraft on RareCandyMaster Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Jun 2025 23:36:43 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>http://localhost:1313/posts/first/</link>
+      <pubDate>Sun, 22 Jun 2025 23:36:43 -0400</pubDate>
+      <guid>http://localhost:1313/posts/first/</guid>
+      <description>This is the title of the article Section 1 Some content here&#xA;Section 2 Some content here</description>
+    </item>
+  </channel>
+</rss>
