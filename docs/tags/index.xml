@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on RareCandyMaster Blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://shahriyarshawon.com/tags/</link>
     <description>Recent content in Tags on RareCandyMaster Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Nov 2024 00:51:33 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shahriyarshawon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch</title>
-      <link>http://localhost:1313/tags/arch/</link>
+      <link>https://shahriyarshawon.com/tags/arch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/arch/</guid>
+      <guid>https://shahriyarshawon.com/tags/arch/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://shahriyarshawon.com/tags/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://shahriyarshawon.com/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Printer</title>
-      <link>http://localhost:1313/tags/printer/</link>
+      <link>https://shahriyarshawon.com/tags/printer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/printer/</guid>
+      <guid>https://shahriyarshawon.com/tags/printer/</guid>
       <description></description>
     </item>
     <item>
       <title>Minecraft</title>
-      <link>http://localhost:1313/tags/minecraft/</link>
+      <link>https://shahriyarshawon.com/tags/minecraft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/minecraft/</guid>
+      <guid>https://shahriyarshawon.com/tags/minecraft/</guid>
       <description></description>
     </item>
   </channel>
