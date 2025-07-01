@@ -1,19 +1,29 @@
 {{ define "main" }}
+<div class="centered">
+	<h3>Hi I'm Shahriyar and this site holds my blog, resume, and a hub for stuff I find cool or interested</h3>
+</div>
+<hr>
 
-<h1>Latest (5) Posts</h1>
-<h3>For more posts, go to <a href="/posts">Posts</a> or if you want to browse by tags, go to <a href="/tags">Tags</a></h3>
-<h4>For anything else, hit the hamburger menu</h4>
+<h1>Stuff I do:</h1>
+<ul>
+    <li>⚡️Tinker with Arduino/RPI</li>
+    <li>💾Make software</li>
+    <li>▶️Make YouTube tutorials on things I think I may need in the future</li>
+</ul>
 
-<!-- List all blog posts -->
-{{ range first 5 (where .Site.RegularPages "Section" "posts")}}
-<article>
-  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <time>{{ .Date.Format "January 2, 2006" }}</time>
-  {{ if .Params.Tags }}
-	  <p>Tags: {{ partial "tags.html" . -}}</p>
-  {{ end }}
-  <p>{{ .Summary }}</p>
-  <a href="{{ .RelPermalink }}">Read more →</a>
-</article>
-<hr />
-{{ end }} {{ end }}
+<h1>Other Stuff I like:</h1>
+<ul>
+	<li>🥋BJJ</li>
+	<li>🎸Metal / Rock Music</li>
+    <li>🏸Badminton and Ultimate</li> 
+    <li>📝Linguistics (Mainly Etymology and Orthography)</li>
+    <li>⏰History</li>
+</ul>
+
+
+<p>If you want to see what I use for computing or how I use it, head over to <a href="/stuffIUse.html">stuff I use</a></p>
+<p>Go over to <a href="/musicILike.html">my music if you like metal and rock</a></p>
+
+<p>Just use the navbar for anything else</p>
+
+{{ end }}
