@@ -17,3 +17,5 @@ dist/
 .DS*
 
 *map
+
+node_modules/

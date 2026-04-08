@@ -1,0 +1,121 @@
+$accent-scarlet: #ff2400;
+$accent-violet: #c957fa;
+$accent-color: #277fff;
+$accent-light: #05a1f7;
+$accent-emerald: #50c878;
+$accent-lemon: #fff44f;
+
+@font-face {
+  font-family: "UniversLT";
+  src: url("fonts/UniversLTStd.otf") format("otf");
+}
+
+body {
+  .hidden {
+    display: none;
+  }
+
+  h1 {
+    color: $accent-color;
+    margin-bottom: 20px;
+  }
+  h2 {
+    color: $accent-light;
+  }
+  h3 {
+    color: $accent-emerald;
+  }
+  h4 {
+    color: $accent-violet;
+  }
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 5px;
+  }
+}
+
+#warning {
+  color: $accent-scarlet;
+}
+
+
+body {
+  background-color: #e7e8ea;
+  font-family: "UniversLT", sans-serif;
+  font-weight: 500;
+}
+
+code {
+  font-size: clamp(12px, 14px, 14px);
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  font-size: clamp(12px, 14px, 14px);
+  border-left: 2px solid #26312d;
+}
+
+th {
+  background-color: #e7e8ea;
+  border-bottom: 1px solid black;
+}
+th,
+td {
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+td {
+  border-bottom: 1px solid #b7b8ba;
+}
+
+table a {
+  text-decoration: none;
+}
+
+.date-field {
+  font-family: monospace;
+}
+
+#content {
+  background-color: white;
+  color: #26312d;
+  width: 85%;
+  min-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+a {
+  color: #275db3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#navbar > a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 10px 10px 10px;
+  padding: 3px 15px 3px 15px;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+}
+#navbar > a:hover {
+  background-color: #26312d;
+  color: #e7e8ea;
+}
+
+.active {
+  color: red;
+}
+
+.post-content {
+  padding: 10px;
+}

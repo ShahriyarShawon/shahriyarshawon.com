@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+title: Tags
+permalink: /tags/
+---
+
+<h1>Tags</h1>
+
+<table>
+	<tr>
+		<th>Tag</th>
+	</tr>
+		{% for tag in collections.tagList %}
+		<tr>
+			<td><a class="tag" href="/tags/{{ tag | slugify }}/">{{ tag }}</a></td>
+		</tr>
+		{% endfor %}
+	
+</table>
+

@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag | slugify }}/
+title: "Posts tagged: {{ tag }}"
+---
+
+<h1>Posts tagged: {{ tag }}</h1>
+
+<table>
+    <colgroup>
+        <col style="width: 200px">
+        <col style="width: auto">
+    <colgroup>
+    <tr>
+        <th>Date</th>
+        <th>Title</th>
+    </tr>
+    {% for post in collections.all | filterByTag(tag) %}
+    <tr>
+        <td class="date-field">{{ post.date | readableDate }}</td>
+        <td><a href={{ post.url }} target="_blank">{{ post.data.title }}</a></td>
+    </tr>
+    {% endfor %}
+	
+</table>
+
