@@ -3,6 +3,7 @@ import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 export default function (eleventyConfig) {
   // copy public/ straight to output
   eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   // syntax highlighting (build-time, zero client JS)
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -23,14 +24,17 @@ export default function (eleventyConfig) {
     return [...tags].sort();
   });
 
-  // date filter for templates
-  eleventyConfig.addFilter("readableDate", (date) =>
-    new Date(date).toLocaleDateString("en-US", {
+  eleventyConfig.addFilter("readableDate", (date) => {
+    const d = new Date(date);
+    const year = d.getUTCFullYear();
+    const month = d.getUTCMonth();
+    const day = d.getUTCDate();
+    return new Date(year, month, day).toLocaleDateString("en-US", {
       year: "numeric",
       month: "short",
       day: "numeric",
-    }),
-  );
+    });
+  });
 
   eleventyConfig.addFilter("filterByTag", (collection, tag) =>
     collection.filter((post) => (post.data.tags || []).includes(tag)),
@@ -43,7 +47,7 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy(
-    "content/**/*.{avif,png,jpg,jpeg,gif,webp,svg}",
+    "content/**/*.{avif,png,jpg,jpeg,gif,webp,svg,mp4}",
   );
 
   return {

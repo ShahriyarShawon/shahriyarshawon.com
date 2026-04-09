@@ -2,7 +2,8 @@
 	{% for item in nav %}
 		<a href="{{ item.url }}"
 			{% if page.url == item.url %}class="active"{% endif %}
-			{% if item.label == "About Me" %}target="_blank"{% endif %}>
+			{% if item.new_page %}target="_blank"{% endif %}>
+			{% if page.url == item.url %}⚓{% endif %}
 			{{ item.label }}
 		</a>
 	{% endfor %}

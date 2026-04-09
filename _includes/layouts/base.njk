@@ -4,13 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/public/css/styles.css"/>
+	<script src="/public/js/theme.js"></script>
     <title>{{ title }}</title>
   </head>
   <body>
+
+	<button id="theme-toggle" aria-label="Toggle dark mode">
+		<span id="theme-icon">☀</span>
+	</button>
+
 	
 	<div id="content">
 		{% include "components/navbar.njk" %}
-		{{ content | safe }}
+
+		<div class="inner-content">
+			<div>
+				{{ content | safe }}
+			</div>
+		</div>
 	</div>
   </body>
 </html>

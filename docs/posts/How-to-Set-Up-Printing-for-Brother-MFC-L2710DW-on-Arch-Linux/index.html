@@ -4,70 +4,81 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/public/css/styles.css"/>
+	<script src="/public/js/theme.js"></script>
     <title>How to Set Up Printing for Brother MFC L2710DW on (Arch) Linux</title>
   </head>
   <body>
+
+	<button id="theme-toggle" aria-label="Toggle dark mode">
+		<span id="theme-icon">☀</span>
+	</button>
+
 	
 	<div id="content">
 		<nav id="navbar">
 	
-		<a href="/pages/about-me"
+		<a href="/"
 			
 			>
+			
 			Home
 		</a>
 	
-		<a href="/posts/"
+		<a href="/pages/posts/"
 			
 			>
+			
 			Posts
 		</a>
 	
 		<a href="/tags/"
 			
 			>
+			
 			Tags
 		</a>
 	
-		<a href="/stuff-i-use/"
+		<a href="/pages/stuff-i-use/"
 			
 			>
+			
 			Stuff I Use
 		</a>
 	
 		<a href="/public/Shahriyar-Shawon-Resume.pdf"
 			
-			>
+			target="_blank">
+			
 			Resume
 		</a>
 	
-		<a href="/public/Shahriyar-Shawon-Resume.pdf"
+		<a href="https://imgur.com/gallery/shays-wallpapers-GFCpr8n"
 			
-			>
+			target="_blank">
+			
 			Cool Backgrounds
 		</a>
 	
-		<a href="/public/Shahriyar-Shawon-Resume.pdf"
+		<a href="https://www.youtube.com/channel/UC6AgrsLgCqKQ39kHzLTo0mQ"
 			
-			>
-			Music I Like
-		</a>
-	
-		<a href="/public/Shahriyar-Shawon-Resume.pdf"
+			target="_blank">
 			
-			>
 			YouTube
 		</a>
 	
-		<a href="/public/Shahriyar-Shawon-Resume.pdf"
+		<a href="https://github.com/ShahriyarShawon"
 			
-			>
+			target="_blank">
+			
 			GitHub
 		</a>
 	
 </nav>
 
-		
+
+		<div class="inner-content">
+			<div>
+				
 <div class="post-content">
 <p><em><strong>As of 2024 there was a vulnerability found in CUPS so instead of running <code>systemctl enable cups.service</code> you should probably just
 explicitly start it with <code>systemctl start cups.service</code> when you need to print.</strong></em></p>
@@ -100,6 +111,8 @@ $ systemctl start cups.service</code></pre>
 
 </div>
 
+			</div>
+		</div>
 	</div>
   </body>
 </html>

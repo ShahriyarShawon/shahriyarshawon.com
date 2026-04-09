@@ -3,22 +3,19 @@ layout: layouts/base.njk
 title: My Site
 ---
 
-# Posts
+##  Stuff I do:
 
-<table>
-    <colgroup>
-        <col style="width: 150px">
-        <col style="width: auto">
-    <colgroup>
-    <tr>
-        <th>Date</th>
-        <th>Title</th>
-    </tr>
+- 📝 Blog???
+- 💾 Write software
+- ▶️ Make YouTube videos (RARE!)
+- ☁️ Homelab Enjoyer
+- ⚡️ Bare Metal Alchemist ( I haven't touched embedded in months)
 
-    {% for post in collections.posts %}
-    <tr>
-        <td class="date-field">{{ post.date | readableDate }}</td>
-        <td><a href={{ post.url }} target="_blank">{{ post.data.title }}</a></td>
-    </tr>
-    {% endfor %}
-</table>
+## Other Stuff I like:
+
+- 🎸 Power Metal / Rock Music
+- 🥋 BJJ
+- 🏸 Badminton and Ultimate
+- 📝 Linguistics
+- ⏰ History
+
