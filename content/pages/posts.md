@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: My Site
+title: Blog Posts
 ---
 
 # Posts

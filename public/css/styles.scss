@@ -119,9 +119,11 @@ table {
   font-size: clamp(12px, 14px, 14px);
   border-left: 2px solid var(--emerald);
   max-width: 100%;
-  display: block;
   overflow-x: auto;
   box-sizing: border-box;
+  border-top: 1px solid $slate;
+  border-right: 1px solid $slate;
+  border-bottom: 1px solid $slate;
 }
 
 th {
@@ -137,6 +139,10 @@ td {
 
 td {
   border-bottom: 1px solid var(--bg);
+  p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 table a {

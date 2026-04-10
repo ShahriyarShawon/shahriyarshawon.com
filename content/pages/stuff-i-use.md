@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: My Site
+title: Stuff I Use
 ---
 <h1>Everyday stuff I use</h1>
 

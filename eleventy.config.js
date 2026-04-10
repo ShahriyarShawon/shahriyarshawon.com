@@ -2,6 +2,7 @@ import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function (eleventyConfig) {
   // copy public/ straight to output
+  eleventyConfig.addPassthroughCopy({"public/favicon.ico": "/"});
   eleventyConfig.addPassthroughCopy("public");
   eleventyConfig.addPassthroughCopy("CNAME");
 
