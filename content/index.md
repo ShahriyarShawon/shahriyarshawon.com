@@ -19,16 +19,11 @@ title: Shay's Site
         </th>
     </tr>
     <tr>
-        <td>Grad</td>
+        <td>School</td>
         <td>
-        <p>Drexel University: Masters (est: 2027)</p>
-        <p>Computer Engineering</p>
-        </td>
-    </tr>
-    <tr>
-        <td>Undergrad</td>
-        <td>
-            <p>Drexel University: Bachelors (2025)</p>
+            <p>Drexel University - Masters (est: 2027)</p>
+            <p>Computer Engineering</p>
+            <p>Drexel University - Bachelors (2025)</p>
             <p>Computer Science</p>
         </td>
     </tr>

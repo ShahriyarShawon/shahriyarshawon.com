@@ -98,13 +98,6 @@ code {
   border: 1px solid var(--violet);
 }
 
-/* table { */
-/*   border-collapse: collapse; */
-/*   text-align: left; */
-/*   font-size: clamp(12px, 14px, 14px); */
-/*   border-left: 2px solid var(--emerald); */
-/* } */
-
 pre {
   overflow-x: auto;
   max-width: 100%;
@@ -114,39 +107,40 @@ pre {
 }
 
 table {
-  border-collapse: collapse;
+  border-spacing: 0;
   text-align: left;
   font-size: clamp(12px, 14px, 14px);
   border-left: 2px solid var(--emerald);
   max-width: 100%;
   overflow-x: auto;
   box-sizing: border-box;
-  border-top: 1px solid $slate;
-  border-right: 1px solid $slate;
-  border-bottom: 1px solid $slate;
-}
-
-th {
-  background-color: var(--bg);
+  border-top: 1px solid black;
+  border-right: 1px solid black;
   border-bottom: 1px solid black;
-  color: var(--text);
-}
-th,
-td {
-  padding-right: 10px;
-  padding-left: 5px;
-}
 
-td {
-  border-bottom: 1px solid var(--bg);
-  p {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  a {
+    text-decoration: none;
   }
-}
 
-table a {
-  text-decoration: none;
+  th,
+  td {
+    padding-right: 10px;
+    padding-left: 5px;
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  th {
+    background-color: var(--bg);
+    border-bottom: 1px solid black;
+    color: var(--text);
+    padding: 3px;
+  }
+
+  td {
+    border-bottom: 1px solid var(--bg);
+  }
 }
 
 .date-field {
@@ -288,6 +282,6 @@ a:hover {
 
 video {
   max-width: 100%;
-  height:    auto;
-  display:   block;
+  height: auto;
+  display: block;
 }
