@@ -49,8 +49,8 @@ $accent-lemon-light: #c4b800;
 }
 
 @font-face {
-  font-family: "UniversLT";
-  src: url("fonts/UniversLTStd.otf") format("otf");
+  font-family: "Univers";
+  src: url("../fonts/univers-next-regular.woff2") format("woff2");
 }
 
 body {
@@ -84,8 +84,9 @@ body {
 
 body {
   background-color: var(--bg);
-  font-family: "UniversLT", sans-serif;
-  font-weight: 500;
+  font-family: "Univers", sans-serif;
+  font-weight: 450;
+  font-stretch: 95%;
   padding-bottom: 60px;
 }
 
