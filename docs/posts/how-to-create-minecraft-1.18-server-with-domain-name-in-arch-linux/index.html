@@ -79,11 +79,15 @@
 		<div class="inner-content">
 			<div>
 				
+<p class="last-updated">
+Last Updated 2022-07-02
+</p>
+
 <div class="post-content">
 <p>This tutorial assumes that you have a vps or some type of system where
 arch linux is setup and you are able to access it using <code>ssh</code> or any
 other means. This is not an arch setup tutorial.</p>
-<h2>You'll Need</h2>
+<h2 id="youll-need" tabindex="-1">You'll Need</h2>
 <ul>
 <li>
 <p>On Server</p>
@@ -104,11 +108,11 @@ other means. This is not an arch setup tutorial.</p>
 <p>A namecheap domain</p>
 </li>
 </ul>
-<h2>Get Everything Installed</h2>
+<h2 id="get-everything-installed" tabindex="-1">Get Everything Installed</h2>
 <p>Remember this is a tutorial for Arch Linux so I'll be providing the package name for <code>pacman</code> and not <code>apt</code>.</p>
 <pre class="language-sh"><code class="language-sh"><span class="token function">sudo</span> pacman <span class="token parameter variable">-s</span> <span class="token function">screen</span> <span class="token function">curl</span> jdk-opendjk <span class="token function">nano</span></code></pre>
 <p>Substitute out <code>nano</code> for <code>vim</code> if needed and feel free to leave out <code>curl</code> if its already installed.</p>
-<h2>Setup Server</h2>
+<h2 id="setup-server" tabindex="-1">Setup Server</h2>
 <ul>
 <li>Get Vanilla 1.18 <code>server.jar</code> from
 <a href="https://serverjars.com/">minecraftjars.com</a>
@@ -135,7 +139,7 @@ server.</p>
 <pre class="language-sh"><code class="language-sh"><span class="token function">java</span> <span class="token parameter variable">-jar</span> <span class="token parameter variable">-Xmx3G</span> server.jar</code></pre>
 <p>I don't want to type out this command everytime I want to start up my
 server so I put this command in a file called <code>runserver.sh</code></p>
-<h2>Startup Script</h2>
+<h2 id="startup-script" tabindex="-1">Startup Script</h2>
 <pre class="language-sh"><code class="language-sh"><span class="token comment"># create runserver.sh file</span>
 <span class="token function">touch</span> runserver.sh
 <span class="token function">nano</span> runserver.sh</code></pre>
@@ -148,7 +152,7 @@ your script executable.</p>
 using the <code>ls</code> command and then run the script with <code>./runserver.sh</code></p>
 <p>Before you do that, you probably want to run the script in <code>screen</code> so
 you don't have to stay connected to the server to have the server running.</p>
-<h2>Keep server running without ssh connection</h2>
+<h2 id="keep-server-running-without-ssh-connection" tabindex="-1">Keep server running without ssh connection</h2>
 <p>In your server directory run the <code>screen</code> command, this will start a
 new bash session that will stay running in the background even if you
 detach from it.</p>
@@ -156,7 +160,7 @@ detach from it.</p>
 after it's loaded, you can press <code>ctrl+a d</code> to detach from that session.
 This'll bring you back to your normal bash session. If you want to reattach to the <code>screen</code> window, you can do <code>screen -r</code>.</p>
 <p>For more information on <code>screen</code>, you can run <code>man screen</code> or <code>info  screen</code> or go to the <a href="https://www.gnu.org/software/screen/manual/screen.html">GNU Docs for screen</a></p>
-<h2>Connect to Server using domain name</h2>
+<h2 id="connect-to-server-using-domain-name" tabindex="-1">Connect to Server using domain name</h2>
 <p>Taken from <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9765/2208/how-can-i-link-my-domain-name-to-a-minecraft-server/">Namecheap Article</a>:</p>
 <blockquote>
 <p>Mapping a subdomain (e.g., mc.yourdomain.tld, www.yourdomain.tld, etc.) to your Minecraft server.</p>
