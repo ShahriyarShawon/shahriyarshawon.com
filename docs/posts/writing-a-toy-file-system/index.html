@@ -80,12 +80,26 @@
 			<div>
 				
 <div class="post-content">
-<h1>Writing a toy Filesystem</h1>
+<h1>Writing a toy Filesystem (WIP)</h1>
+<p>I'm trying to make, what I'm calling, a toy filesystem. It's going to be file based (a file on my linux machine will operate as a disk),
+a rust program will be the proprieter of managing the data, it will be very basic, it will be very small, it will suck.</p>
+<p>I thought it would be a cool project to do with minimal exposure to file systems.</p>
+<p>The extent of my knowledge of filesystems was overviews in 2 operating systems classes (Linux and Inferno) in undergrad which at this point in 2026
+was about 2-3 years ago now. I'm using the Tanenbaum Minix Book as a sort of guide but mostly for architecture.
+The operations (read, write, mkdir, etc.) will be all my code.</p>
+<p>Things I will not be worrying about for dfs (I'm gonna call this file system dfs: <code>Disk File System</code>)</p>
+<ul>
+<li>permissions</li>
+<li>ownership</li>
+<li>multi level data storage (indirect blocks)</li>
+<li>any form of error correction</li>
+<li>linux-like file descriptors (I'm not sure how to separate responsibilities so I'm gonna make the file system controller not care)</li>
+</ul>
 <h3>Superblock Structure</h3>
 <video controls>
   <source src="Superblock.mp4" type="video/mp4">
 </video>
-<h3>Locating I-Node in I-Node bitmap block</h3>
+<h3>Locating a free block in block bitmap</h3>
 <video controls>
   <source src="LocateBlockInMap.mp4" type="video/mp4">
 </video>

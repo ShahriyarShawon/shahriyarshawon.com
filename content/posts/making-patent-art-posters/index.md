@@ -4,7 +4,7 @@ date: "2026-04-08"
 tags: [non-technical, art]
 ---
 
-# Making Patent Art Posters
+# Making Patent Art Posters (WIP)
 
 ## Manual Transmission - US Patent 4458551
 ![Manual Transmission](images/US4458551-manual-transmission-bg1E1E1E_lineFFFFFF.png)
