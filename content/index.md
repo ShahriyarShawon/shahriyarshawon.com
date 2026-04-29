@@ -3,8 +3,6 @@ layout: layouts/base.njk
 title: Shay's Site
 ---
 
-<h3> If you are hiring, here is my <a href="/public/Shahriyar-Shawon-Resume.pdf">resume</a></h3>
-
 <table>
     <colgroup>
         <col style="width: 150px">
@@ -29,7 +27,7 @@ title: Shay's Site
     </tr>
     <tr>
         <td>Employment</td>
-        <td>Part-Time Student</td>
+        <td>Modern Signal</td>
     </tr>
     <tr>
         <td>Previous Employers</td>
@@ -46,7 +44,6 @@ title: Shay's Site
     </tr>
 </table>
 
-# Personality I guess
 
 ## Stuff I am
 - ☁️ Homelab Enjoyer
@@ -59,8 +56,8 @@ title: Shay's Site
 
 ## Other Stuff I like:
 
-- 🎸 Power Metal / Rock Music
-- 🥋 BJJ
-- 🏸 Badminton and Ultimate
-- 📝 Linguistics
+- 🎸 Power Metal / Rock / Euro(beat|dance|house) Music
 - ⏰ History
+- 📝 Linguistics
+- 🏸 Badminton and Ultimate
+- 🥋 BJJ
