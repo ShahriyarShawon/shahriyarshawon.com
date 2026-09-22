@@ -79,11 +79,15 @@
 		<div class="inner-content">
 			<div>
 				
+<p class="last-updated">
+Last Updated 2024-11-21T00:51:33-05:00
+</p>
+
 <div class="post-content">
 <p><em><strong>As of 2024 there was a vulnerability found in CUPS so instead of running <code>systemctl enable cups.service</code> you should probably just
 explicitly start it with <code>systemctl start cups.service</code> when you need to print.</strong></em></p>
-<h1>Installation</h1>
-<h3>Find the packages for your distro if not on Arch</h3>
+<h1 id="installation" tabindex="-1">Installation</h1>
+<h3 id="find-the-packages-for-your-distro-if-not-on-arch" tabindex="-1">Find the packages for your distro if not on Arch</h3>
 <ul>
 <li><a href="https://repology.org/project/cups/versions">cups</a></li>
 <li><a href="https://repology.org/project/ghostscript/versions">ghostscript</a></li>
@@ -101,13 +105,13 @@ $ paru MFC-L2710DW
 
 <span class="token comment"># Start Cups</span>
 $ systemctl start cups.service</code></pre>
-<h1>Configuration</h1>
+<h1 id="configuration" tabindex="-1">Configuration</h1>
 <ul>
 <li>Navigate to <code>localhost:631</code> &gt; Administration &gt; Add Printer</li>
 <li>In <code>Connection</code> enter : <code>ipp://&lt;PRINTER_IP&gt;/ipp/port1</code></li>
 <li>Select Driver (I ended up choosing the &quot;IPP Everywhere&quot; driver)</li>
 </ul>
-<h4>Note: The section mentioned in the Arch Wiki is slightly different now</h4>
+<h4 id="note-the-section-mentioned-in-the-arch-wiki-is-slightly-different-now" tabindex="-1">Note: The section mentioned in the Arch Wiki is slightly different now</h4>
 
 </div>
 

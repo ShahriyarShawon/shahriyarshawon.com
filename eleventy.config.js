@@ -1,8 +1,10 @@
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
 
 export default function (eleventyConfig) {
   // copy public/ straight to output
-  eleventyConfig.addPassthroughCopy({"public/favicon.ico": "/"});
+  eleventyConfig.addPassthroughCopy({ "public/favicon.ico": "/" });
   eleventyConfig.addPassthroughCopy("public");
   eleventyConfig.addPassthroughCopy("CNAME");
 
@@ -43,12 +45,21 @@ export default function (eleventyConfig) {
 
   // eleventy.config.js
   eleventyConfig.amendLibrary("md", (mdLib) => {
+    mdLib.use(markdownItAnchor, {
+      level: [1, 2, 3, 4],
+      slugify: (s) =>
+        s
+          .toLowerCase()
+          .replace(/[^\w\s-]/g, "")
+          .replace(/\s+/g, "-")
+          .trim(),
+    });
     mdLib.set({ html: true });
     // tables work by default in markdown-it
   });
 
   eleventyConfig.addPassthroughCopy(
-    "content/**/*.{avif,png,jpg,jpeg,gif,webp,svg,mp4}",
+    "content/**/*.{avif,png,jpg,jpeg,gif,webp,svg,mp4,sh}",
   );
 
   return {

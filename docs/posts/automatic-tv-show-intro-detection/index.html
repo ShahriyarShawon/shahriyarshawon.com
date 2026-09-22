@@ -79,25 +79,29 @@
 		<div class="inner-content">
 			<div>
 				
+<p class="last-updated">
+Last Updated 2025-07-23
+</p>
+
 <div class="post-content">
-<h1>TLDR</h1>
+<h1 id="tldr" tabindex="-1">TLDR</h1>
 <p>The code used for this can be found <a href="https://github.com/ShahriyarShawon/python-auto-intro-detection/tree/4a74655c905a8ba0864d56fcde137ad0d1e4209d">in this github repo at this commit</a></p>
 <p>Using MS-SSIM (<a href="https://en.wikipedia.org/wiki/Structural_similarity_index_measure" title="_blank">Multi Scale Strucutural Similarity</a>) to calculate the similarity between a known frame and the last frame of an intro in DBZ Kai allowed me to figure out where the intro sequence was in a subset of the pre Boo Saga DBZ Kai episodes.</p>
 <p>The Single-Core performance operates at about 33 fps and using 4 cores to parallelize the process provides a small increase in performance to 52 fps</p>
 <p>Using a visual based process to find intro's seems to be unreliable with a series that has multiple different visuals while maintaining, more or less, the same audio track.</p>
-<h1>Motivation</h1>
+<h1 id="motivation" tabindex="-1">Motivation</h1>
 <p>Recently, I was re-watching Dragon Ball Z Kai and noticed that the intro song, Dragon Soul, had several different singers throughout various parts of the show. I didn't recall this from my childhood and only remember one specific singer, Vic Mignogna. Since I already had all the episodes downloaded, I was thinking about replacing the audio track of the intro from each episode with the audio track which had Vic singing the theme song.</p>
 <p>To do this, I'll use ffmpeg to perform the actual audio replacement, but I need to specify the start of the intro for each episode. Not all episodes start rolling the intro at the same time so I'll need to detect the intro for each episode on its own.</p>
-<h1>Methodology</h1>
+<h1 id="methodology" tabindex="-1">Methodology</h1>
 <p>The basic concept for both methods I used for intro detection is having a frame from the video from either the very beginning of the intro or the very end and then going through each frame in each episode and computing the similarity of the reference frame to each frame in the episode. I'll be using MS-SSIM (<a href="https://en.wikipedia.org/wiki/Structural_similarity_index_measure" title="_blank">Multi Scale Strucutural Similarity</a>) to calculate frame similarity. When there is a sufficiently high level of similarity, that's a tell that the the program has found a match, and we can use the index of the matched frame and the FPS to calculate the timestamp where the match happens.</p>
-<h2>First Frame Based Intro Detection</h2>
+<h2 id="first-frame-based-intro-detection" tabindex="-1">First Frame Based Intro Detection</h2>
 <p>For this method, the first frame of the intro is detected. For specifically the DBZ Kai Pre Boo Saga episodes this method poses a slight problem. The first frame of the intro is completely black, there is about a second or two of just black frames with no audio that then evolved into the first visual frame. So instead, I used the first frame that wasn't just black to calculate the start and end position. Because there is a slight offset, the audio was not completely in sync.</p>
-<h2>Last Frame Based Intro Detection</h2>
+<h2 id="last-frame-based-intro-detection" tabindex="-1">Last Frame Based Intro Detection</h2>
 <p>For this method the program will loop through the frames until there's a large drop-off in frame similarity. The idea is that for some frames at the end of the intro, there will be very high similarity between the reference frame and the frame the program is currently on. The frame directly after is probably not going to be similar at all to the end of the intro so there will be a steep drop-off of similarity. Using this drop-off we can figure out when the intro starts and ends more reliably.</p>
 <p><img src="ssim-dropoff.avif" alt="MS-SSIM Dropoff">
 <a href="ssim-dropoff.avif" title="_blank">Click here for full res MS-SSIM Dropoff</a></p>
-<h1>High-Level Implementation</h1>
-<h2>First Frame Based Intro Detection</h2>
+<h1 id="high-level-implementation" tabindex="-1">High-Level Implementation</h1>
+<h2 id="first-frame-based-intro-detection-1" tabindex="-1">First Frame Based Intro Detection</h2>
 <p>A pretty simple process.</p>
 <ol>
 <li>Read a frame from the cv2 Video Capture, reshape it if necessary.</li>
@@ -105,15 +109,15 @@
 <li>If the current score is greater than <code>0.8</code>, we've found the intro.</li>
 <li>Using the FPS, I can calculate the timestamp in seconds and then turn that into a MM:SS time for the first frame of the</li>
 </ol>
-<h2>Last Frame Based Intro Detection</h2>
+<h2 id="last-frame-based-intro-detection-1" tabindex="-1">Last Frame Based Intro Detection</h2>
 <p>Pretty similar to the First Frame based process except step 3 would be:</p>
 <ol start="3">
 <li>If the difference between the previous and current score is greater than <code>0.5</code>, we've found the last frame of the intro.</li>
 </ol>
-<h2>A Very Naive Multi Core Version of Last Frame Based Intro Detection</h2>
+<h2 id="a-very-naive-multi-core-version-of-last-frame-based-intro-detection" tabindex="-1">A Very Naive Multi Core Version of Last Frame Based Intro Detection</h2>
 <p>In this implementation I'm using the <code>multiprocessing</code> library to make use of multiple cores (4), and some data structures to share data.
 I'm operating in batches of <code>1000</code> frames.</p>
-<h3>Main Process:</h3>
+<h3 id="main-process" tabindex="-1">Main Process:</h3>
 <ol>
 <li>Loop Forever</li>
 <li>Read <code>1000</code> frames</li>
@@ -122,20 +126,20 @@ I'm operating in batches of <code>1000</code> frames.</p>
 <li>Launch the cores</li>
 <li>Loop over the calculated scores and see if the <code>previous - current</code> score is greater than <code>0.5</code></li>
 </ol>
-<h3>Consumer Processes:</h3>
+<h3 id="consumer-processes" tabindex="-1">Consumer Processes:</h3>
 <ol>
 <li>Read an index and frame from queue as long as there are values to be read</li>
 <li>Calculate MS-SSIM score and put it into shared array at the index that was popped off the queue</li>
 <li>End once there are no more frames to be read</li>
 </ol>
-<h1>Performance</h1>
+<h1 id="performance" tabindex="-1">Performance</h1>
 <p>Each implementation was tested on <code>S01E38</code> of <code>Dragon Ball Z Kai</code> so that the intro was offset into the video a little bit to get a better idea of the first and last frame implementations</p>
-<h2>Specs of Machine</h2>
+<h2 id="specs-of-machine" tabindex="-1">Specs of Machine</h2>
 <ul>
 <li>CPU: <code>AMD Ryzen 7 5800X3D</code></li>
 <li>RAM: 32 GB</li>
 </ul>
-<h2>Video Specs</h2>
+<h2 id="video-specs" tabindex="-1">Video Specs</h2>
 <table>
 <thead>
 <tr>
@@ -166,8 +170,8 @@ I'm operating in batches of <code>1000</code> frames.</p>
 </tr>
 </tbody>
 </table>
-<h4>These are very naive implementations that are not optimized and there is for sure performance left on the table.</h4>
-<h2>First Frame Based Intro Detection</h2>
+<h4 id="these-are-very-naive-implementations-that-are-not-optimized-and-there-is-for-sure-performance-left-on-the-table" tabindex="-1">These are very naive implementations that are not optimized and there is for sure performance left on the table.</h4>
+<h2 id="first-frame-based-intro-detection-2" tabindex="-1">First Frame Based Intro Detection</h2>
 <table>
 <thead>
 <tr>
@@ -243,7 +247,7 @@ I'm operating in batches of <code>1000</code> frames.</p>
 </tr>
 </tbody>
 </table>
-<h2>Last Frame Based Intro Detection</h2>
+<h2 id="last-frame-based-intro-detection-2" tabindex="-1">Last Frame Based Intro Detection</h2>
 <table>
 <thead>
 <tr>
@@ -270,7 +274,7 @@ I'm operating in batches of <code>1000</code> frames.</p>
 </tr>
 </tbody>
 </table>
-<h2>Naive Multi Core Implementation</h2>
+<h2 id="naive-multi-core-implementation" tabindex="-1">Naive Multi Core Implementation</h2>
 <table>
 <thead>
 <tr>
@@ -305,12 +309,12 @@ I'm operating in batches of <code>1000</code> frames.</p>
 </tr>
 </tbody>
 </table>
-<h1>Limitations</h1>
-<h2>Accuracy</h2>
+<h1 id="limitations" tabindex="-1">Limitations</h1>
+<h2 id="accuracy" tabindex="-1">Accuracy</h2>
 <p>The first frame based method at the moment is not entirely accurate. Because the DBZ Kai intro first has around a second of black frames before starting the intro, when I was replacing the audio track, the audio didn't sync up. Realistically, this could probably be solved by offsetting the calculated frame with the number of frames that there is a black frame on screen. This seems a bit simplistic and I imagine there could be some potential problems with this method which is what led me to use the last frame-based method.</p>
-<h2>Methodology</h2>
+<h2 id="methodology-1" tabindex="-1">Methodology</h2>
 <p>While testing on a few episodes I realized that my script was failing on S01E64. Upon further inspection I saw that the last frame of the was not the same as S01E1 and S01E38. This means that this method would only work on a subset of episodes which means I should find a better method of recognizing the end of an intro based on something other than just frame similarity. Maybe something based on audio would be a better method.</p>
-<h2>Multi Core</h2>
+<h2 id="multi-core" tabindex="-1">Multi Core</h2>
 <p>My multi core implementation is very very bad. I get a marginally better time overall but per core the rate decreases by a lot. I'm not very familiar with using multiprocessing so mostly this is a skill issue. I imagine the multiprocessing queue has some sort of synchronization/built-in locking so that could potentially be holding back some performance. For next steps I want to be able to use a lock free method for grabbing frames and storing scores.</p>
 
 </div>

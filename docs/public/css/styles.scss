@@ -49,8 +49,8 @@ $accent-lemon-light: #c4b800;
 }
 
 @font-face {
-  font-family: "UniversLT";
-  src: url("fonts/UniversLTStd.otf") format("otf");
+  font-family: "Univers";
+  src: url("../fonts/univers-next-regular.woff2") format("woff2");
 }
 
 body {
@@ -84,8 +84,9 @@ body {
 
 body {
   background-color: var(--bg);
-  font-family: "UniversLT", sans-serif;
-  font-weight: 500;
+  font-family: "Univers", sans-serif;
+  font-weight: 450;
+  font-stretch: 95%;
   padding-bottom: 60px;
 }
 
@@ -98,55 +99,52 @@ code {
   border: 1px solid var(--violet);
 }
 
-/* table { */
-/*   border-collapse: collapse; */
-/*   text-align: left; */
-/*   font-size: clamp(12px, 14px, 14px); */
-/*   border-left: 2px solid var(--emerald); */
-/* } */
-
 pre {
   overflow-x: auto;
   max-width: 100%;
   box-sizing: border-box;
   white-space: pre-wrap;
   word-break: break-all;
+  border: 1px solid var(--violet);
+  padding: 2px;
+
 }
 
 table {
-  border-collapse: collapse;
+  border-spacing: 0;
   text-align: left;
   font-size: clamp(12px, 14px, 14px);
   border-left: 2px solid var(--emerald);
   max-width: 100%;
   overflow-x: auto;
   box-sizing: border-box;
-  border-top: 1px solid $slate;
-  border-right: 1px solid $slate;
-  border-bottom: 1px solid $slate;
-}
-
-th {
-  background-color: var(--bg);
+  border-top: 1px solid black;
+  border-right: 1px solid black;
   border-bottom: 1px solid black;
-  color: var(--text);
-}
-th,
-td {
-  padding-right: 10px;
-  padding-left: 5px;
-}
 
-td {
-  border-bottom: 1px solid var(--bg);
-  p {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  a {
+    text-decoration: none;
   }
-}
 
-table a {
-  text-decoration: none;
+  th,
+  td {
+    padding-right: 10px;
+    padding-left: 5px;
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  th {
+    background-color: var(--bg);
+    border-bottom: 1px solid black;
+    color: var(--text);
+    padding: 3px;
+  }
+
+  td {
+    border-bottom: 1px solid var(--bg);
+  }
 }
 
 .date-field {
@@ -207,19 +205,7 @@ table a {
     overflow-x: hidden;
   }
 
-  li {
-    line-height: 2em;
-  }
 }
-/* .inner-content { */
-/*   display: flex; */
-/*   justify-content: center; */
-/*   align-items: center; */
-/**/
-/*   li { */
-/*     line-height: 2em; */
-/*   } */
-/* } */
 
 a {
   color: var(--link);
@@ -288,6 +274,6 @@ a:hover {
 
 video {
   max-width: 100%;
-  height:    auto;
-  display:   block;
+  height: auto;
+  display: block;
 }
